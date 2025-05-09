@@ -1,0 +1,118 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a href="#" class="header__logo">MiLogo</a>
+      <button id="nav-toggle" class="header__toggle" aria-label="Abrir menú" aria-expanded="false">
+        ☰
+      </button>
+      <nav id="nav" class="header__nav" role="navigation">
+        <ul class="header__list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" role="img" aria-label="Fondo hero con texto de bienvenida">
+      <div class="container hero__content">
+        <h1 class="hero__title">¡Hola! Soy Nombre Apellido</h1>
+        <p class="hero__subtitle">Desarrolladora Web Full-Stack</p>
+      </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title" class="section-title">About Me</h2>
+        <div class="about__content">
+          <img src="assets/profile.jpg" alt="Foto de Nombre Apellido" class="about__img">
+          <div class="about__text">
+            <p>Soy desarrolladora full-stack con pasión por crear experiencias interactivas y accesibles.</p>
+            <p>Me encanta aprender nuevas tecnologías y optimizar el rendimiento de mis proyectos.</p>
+            <a href="#contact" class="btn btn--primary">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title" class="section-title">Projects</h2>
+        <div class="projects__grid">
+          <article class="project-card">
+            <img src="assets/project1.png" alt="Proyecto 1" class="project-card__img">
+            <div class="project-card__info">
+              <h3 class="project-card__title">Proyecto 1</h3>
+              <p>Descripción breve del proyecto 1.</p>
+              <a href="#" class="project-card__btn">Ver más</a>
+            </div>
+          </article>
+
+          <article class="project-card project-card--reverse">
+            <img src="assets/project2.png" alt="Proyecto 2" class="project-card__img">
+            <div class="project-card__info">
+              <h3 class="project-card__title">Proyecto 2</h3>
+              <p>Descripción breve del proyecto 2.</p>
+              <a href="#" class="project-card__btn">Ver más</a>
+            </div>
+          </article>
+
+          <!-- Añade más project-card según necesites -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title" class="section-title">Contact</h2>
+        <form class="contact__form" novalidate>
+          <div class="contact__field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+          <div class="contact__field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+          <div class="contact__field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="contact__btn btn--primary">Send</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__social">
+        <a href="#" aria-label="LinkedIn">🔗</a>
+        <a href="#" aria-label="GitHub">🐙</a>
+        <!-- más iconos -->
+      </div>
+      <p class="footer__copy">© 2025 Nombre Apellido</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
