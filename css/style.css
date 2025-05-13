@@ -39,10 +39,20 @@ body {
   justify-content: space-between;
 }
 .header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
   font-size: 1.25rem;
   font-weight: bold;
   text-decoration: none;
   color: var(--color-text);
+  img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
 }
 .header__toggle {
   background: none;
@@ -98,32 +108,89 @@ body {
   font-size: 1.25rem;
 }
 
-/* ABOUT */
-.section-title {
+/* ————————————————————————————————————————————
+   ABOUT ME (Layout dos columnas + badges)
+   ———————————————————————————————————————————— */
+.about .section-subtitle {
   text-align: center;
+  color: #555;
   margin-bottom: var(--spacing);
 }
+
 .about__content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: var(--spacing);
+  margin-bottom: var(--spacing);
 }
+
 @media (min-width: 768px) {
   .about__content {
     flex-direction: row;
     align-items: flex-start;
   }
 }
+
+/* Imagen redonda */
+.about__media {
+  flex: 0 0 220px;
+  display: flex;
+  justify-content: center;
+}
 .about__img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
+  border: 4px solid #20a3fa;
 }
-.about__text {
+
+/* Detalles (texto + skills) */
+.about__details {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
 }
+
+/* Texto de presentación */
+.about__text p {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+.about__link {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+.about__btn {
+  margin-top: var(--spacing);
+}
+
+/* Skills badges */
+.skills__title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.skill {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  background: #e5e7eb;
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  color: var(--color-text);
+}
+.skill:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
 
 /* PROJECTS */
 .projects__grid {
@@ -166,7 +233,6 @@ body {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  transition: background 0.2s;
 }
 .project-card__btn:hover,
 .project-card__btn:focus {
@@ -176,6 +242,18 @@ body {
 }
 
 /* CONTACT */
+.contact {
+  background: var(--color-bg);
+  padding: var(--spacing);
+  text-align: center;
+}
+.container-form{
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: var(--spacing);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin: 0 auto;
+}
 .contact__form {
   max-width: 480px;
   margin: 0 auto;
@@ -186,14 +264,18 @@ body {
   margin-bottom: var(--spacing);
 }
 .contact__field label {
+  text-align: left;
+  font-size: 1rem;
+  padding-left: 5px;
   margin-bottom: 0.25rem;
   font-weight: 500;
 }
 .contact__field input,
 .contact__field textarea {
   padding: 0.5rem;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: var(--radius);
+  background-color: var(--color-bg);
 }
 .contact__field input:focus,
 .contact__field textarea:focus {
@@ -216,13 +298,18 @@ body {
 
 /* FOOTER */
 .footer {
-  background: var(--color-bg);
   text-align: center;
   padding: var(--spacing) 0;
+  background: white;
+  box-shadow: 2px 4px 0 rgba(0,0,0,0.1);
 }
 .footer__social a {
   margin: 0 0.5rem;
   color: var(--color-text);
+  img{
+    width: 32px;
+    height: 32px;
+  }
 }
 .footer__social a:focus {
   outline: 2px solid var(--color-primary);

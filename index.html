@@ -11,7 +11,7 @@
 
   <header class="header" role="banner">
     <div class="container header__inner">
-      <a href="#" class="header__logo">MiLogo</a>
+      <a href="#" class="header__logo"><img src="./vista/media/logo-portafolio.png" alt=""></a>
       <button id="nav-toggle" class="header__toggle" aria-label="Abrir menú" aria-expanded="false">
         ☰
       </button>
@@ -26,53 +26,148 @@
   </header>
 
   <main>
-
     <!-- HERO -->
     <section class="hero" role="img" aria-label="Fondo hero con texto de bienvenida">
       <div class="container hero__content">
         <h1 class="hero__title">¡Hola! Soy Nombre Apellido</h1>
         <p class="hero__subtitle">Desarrolladora Web Full-Stack</p>
+        <p class="hero__subtitle">Técnico Microintomático</p>
       </div>
     </section>
 
-    <!-- ABOUT ME -->
+        <!-- ABOUT ME -->
     <section id="about" class="about" aria-labelledby="about-title">
       <div class="container">
-        <h2 id="about-title" class="section-title">About Me</h2>
+        <!-- Título y subtítulo -->
+        <h2 id="about-title" class="section-title">Encantada de conocerte</h2>
         <div class="about__content">
-          <img src="assets/profile.jpg" alt="Foto de Nombre Apellido" class="about__img">
-          <div class="about__text">
-            <p>Soy desarrolladora full-stack con pasión por crear experiencias interactivas y accesibles.</p>
-            <p>Me encanta aprender nuevas tecnologías y optimizar el rendimiento de mis proyectos.</p>
-            <a href="#contact" class="btn btn--primary">Contact</a>
+          <!-- Columna: Imagen -->
+          <div class="about__media">
+            <img
+              src="./vista/media/imagen-portrafolio.jpg"
+              alt="Foto de Alba Sánchez Olmedo"
+              class="about__img"
+            >
+          </div>
+          <!-- Columna: Texto + Skills -->
+          <div class="about__details">
+            <!-- Texto de presentación -->
+            <div class="about__text">
+              <p>
+                Soy una desarrolladora full-stack con pasión por crear experiencias interactivas y accesibles.
+                Tengo experiencia en instalación y mantenimiento de Sistemas Operativos (Windows, Linux)
+                y configuración de hardware. Además, disfruto optimizar el rendimiento de mis proyectos
+                y automatizar tareas en terminal.
+              </p>
+              <p>
+                Si quieres colaborar o simplemente charlar, no dudes en
+                <a href="#contact" class="about__link">contactarme</a>.
+              </p>
+            </div>
+            <!-- Badges de skills -->
+            <div class="about__skills">
+              <h3 class="skills__title">Conocimientos:</h3>
+              <div class="skills__list">
+                <span class="skill">Inteligencia Artificial</span>
+                <span class="skill">PHP</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">Java</span>
+                <span class="skill">MySQL</span>
+                <span class="skill">Wordpress</span>
+                <span class="skill">Elementor</span>
+                <span class="skill">SEO</span>
+                <span class="skill">Marketing Digital</span>
+                <span class="skill">Spring Boot</span>
+                <span class="skill">Instalación S.O.</span>
+                <span class="skill">Mantenimiento HW</span>
+                <span class="skill">Terminal Windows</span>
+                <span class="skill">Terminal Linux</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+
     <!-- PROJECTS -->
     <section id="projects" class="projects" aria-labelledby="projects-title">
       <div class="container">
-        <h2 id="projects-title" class="section-title">Projects</h2>
+        <h2 id="projects-title" class="section-title">Proyectos</h2>
         <div class="projects__grid">
           <article class="project-card">
-            <img src="assets/project1.png" alt="Proyecto 1" class="project-card__img">
+            <img src="" alt="Proyecto 1" class="project-card__img">
             <div class="project-card__info">
-              <h3 class="project-card__title">Proyecto 1</h3>
+              <h3 class="project-card__title">Vitalink</h3>
               <p>Descripción breve del proyecto 1.</p>
               <a href="#" class="project-card__btn">Ver más</a>
             </div>
           </article>
 
-          <article class="project-card project-card--reverse">
-            <img src="assets/project2.png" alt="Proyecto 2" class="project-card__img">
+          <article class="project-card">
+            <img src="./vista/media/pagina-cobalto.png" alt="Proyecto 1" class="project-card__img">
             <div class="project-card__info">
-              <h3 class="project-card__title">Proyecto 2</h3>
-              <p>Descripción breve del proyecto 2.</p>
+              <h3 class="project-card__title">Cobalto AI</h3>
+              <p>Descripción breve del proyecto 1.</p>
               <a href="#" class="project-card__btn">Ver más</a>
             </div>
           </article>
 
+          <article class="project-card">
+            <img src="./vista/media/pagina-pryme-abogados.png" alt="Proyecto 1" class="project-card__img">
+            <div class="project-card__info">
+              <h3 class="project-card__title">Pyme Abogados</h3>
+              <p>Descripción breve del proyecto 1.</p>
+              <a href="#" class="project-card__btn">Ver más</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="./vista/media/pagina-deColores.png" alt="Proyecto 1" class="project-card__img">
+            <div class="project-card__info">
+              <h3 class="project-card__title">DeColores</h3>
+              <p>Descripción breve del proyecto 1.</p>
+              <a href="#" class="project-card__btn">Ver más</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="./vista/media/pagina-adidas.png" alt="Proyecto 1" class="project-card__img">
+            <div class="project-card__info">
+              <h3 class="project-card__title">Adidas Web</h3>
+              <p>Descripción breve del proyecto 1.</p>
+              <a href="#" class="project-card__btn">Ver más</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="./vista/media/pagina-banca.png" alt="Proyecto 1" class="project-card__img">
+            <div class="project-card__info">
+              <h3 class="project-card__title">Banca Online</h3>
+              <p>Descripción breve del proyecto 1.</p>
+              <a href="#" class="project-card__btn">Ver más</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="./vista/media/pagina-cepa.png" alt="Proyecto 1" class="project-card__img">
+            <div class="project-card__info">
+              <h3 class="project-card__title">CEPA</h3>
+              <p>Descripción breve del proyecto 1.</p>
+              <a href="#" class="project-card__btn">Ver más</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="./vista/media/pagina-uship.png" alt="Proyecto 1" class="project-card__img">
+            <div class="project-card__info">
+              <h3 class="project-card__title">Uship</h3>
+              <p>Descripción breve del proyecto 1.</p>
+              <a href="#" class="project-card__btn">Ver más</a>
+            </div>
+          </article>
           <!-- Añade más project-card según necesites -->
         </div>
       </div>
@@ -80,22 +175,22 @@
 
     <!-- CONTACT -->
     <section id="contact" class="contact" aria-labelledby="contact-title">
-      <div class="container">
+      <div class="container container-form">
         <h2 id="contact-title" class="section-title">Contact</h2>
         <form class="contact__form" novalidate>
           <div class="contact__field">
-            <label for="name">Name</label>
+            <label for="name">Nombre:</label>
             <input id="name" name="name" type="text" required>
           </div>
           <div class="contact__field">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required>
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" placeholder="example@domain.com" required>
           </div>
           <div class="contact__field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Hola...." required></textarea>
           </div>
-          <button type="submit" class="contact__btn btn--primary">Send</button>
+          <button type="submit" class="contact__btn btn--primary">Enviar</button>
         </form>
       </div>
     </section>
@@ -105,11 +200,11 @@
   <footer class="footer" role="contentinfo">
     <div class="container footer__inner">
       <div class="footer__social">
-        <a href="#" aria-label="LinkedIn">🔗</a>
-        <a href="#" aria-label="GitHub">🐙</a>
+        <a href="#" aria-label="GitHub"><img src="./vista/media/icons/github.png" alt=""></a>
+        <a href="#" aria-label="LinkedIn"><img src="./vista/media/icons/linkedin-svgrepo-com.svg" alt=""></a>
         <!-- más iconos -->
       </div>
-      <p class="footer__copy">© 2025 Nombre Apellido</p>
+      <p class="footer__copy">© 2025 Alba Sánchez Olmedo</p>
     </div>
   </footer>
 
