@@ -13,7 +13,9 @@
 *::after {
   box-sizing: border-box;
 }
-
+body::-webkit-scrollbar {
+  display: none;
+}
 body {
   margin: 0;
   font-family: sans-serif;

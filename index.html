@@ -4,14 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Mi Portafolio</title>
+  <title>Portafolio - Developer Full Stack</title>
+  <meta name="description" content="Portafolio de Alba Sánchez Olmedo, desarrolladora web full-stack y técnico microintomático.">
+  <meta name="keywords" content="portafolio, desarrolladora web, técnico microintomático, inteligencia artificial, SEO, marketing digital">
+  <meta name="author" content="Alba Sánchez Olmedo">
+  <link rel="icon" href="./vista/media/logo-portafolio.png" type="image/png">
+  <link rel="apple-touch-icon" href="./vista/media/logo-portafolio.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
   <header role="banner">
     <div class="container header__inner">
-      <a href="#" class="header__logo"><img src="./vista/media/logo-portafolio.png" alt=""></a>
+      <a href="index.html" class="header__logo"><img src="./vista/media/logo-portafolio.png" alt=""></a>
       <button id="nav-toggle" class="header__toggle" aria-label="Abrir menú" aria-expanded="false">
         ☰
       </button>
@@ -35,12 +39,12 @@
       </div>
       <!-- Indicador de scroll -->
       <div class="hero__scroll-indicator" aria-hidden="true">
-        <span class="scroll-indicator__icon">⌄</span>
+        <span class="scroll-indicator__icon"><img src="./vista/media/icons/mouse-icon.svg" alt=""></span>
       </div>
     </section>
 
 
-        <!-- ABOUT ME -->
+        <!-- SOBRE MI -->
     <section id="about" class="about" aria-labelledby="about-title">
       <div class="container container-about">
         <!-- Título y subtítulo -->
@@ -71,7 +75,7 @@
                 <a href="#contact" class="about__link">contactarme</a>.
               </p>
             </div>
-            <!-- Badges de skills -->
+            <!-- Habilidades/Conocimientos -->
             <div class="about__skills">
               <h3 class="skills__title">Conocimientos:</h3>
               <div class="skills__list">
@@ -99,7 +103,7 @@
     </section>
 
 
-    <!-- PROJECTS -->
+    <!-- PROYECTOS -->
     <section id="projects" class="projects" aria-labelledby="projects-title">
       <div class="container">
         <h2 id="projects-title" class="section-title">Proyectos</h2>
@@ -225,12 +229,11 @@
               <a href="#" class="project-card__btn">Ver más</a>
             </div>
           </article>
-          <!-- Añade más project-card según necesites -->
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- CONTACTO -->
     <section id="contact" class="contact" aria-labelledby="contact-title">
       <div class="container container-form">
         <h2 id="contact-title" class="section-title">Contacto</h2>
@@ -251,7 +254,6 @@
         </form>
       </div>
     </section>
-
   </main>
 
   <footer class="footer" role="contentinfo">
@@ -259,11 +261,11 @@
       <div class="footer__social">
         <a href="https://github.com/albasanchez00" aria-label="GitHub"><img src="./vista/media/icons/github.png" alt=""></a>
         <a href="https://www.linkedin.com/in/alba-s%C3%A1nchez-olmedo-8a3a412a9/" aria-label="LinkedIn"><img src="./vista/media/icons/linkedin-svgrepo-com.svg" alt=""></a>
-        <!-- más iconos -->
       </div>
       <p class="footer__copy">© 2025 Alba Sánchez Olmedo</p>
     </div>
   </footer>
+  
   <script src="./js/script.js"></script>
 </body>
 </html>
