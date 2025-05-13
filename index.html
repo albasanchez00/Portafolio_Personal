@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <header class="header" role="banner">
+  <header role="banner">
     <div class="container header__inner">
       <a href="#" class="header__logo"><img src="./vista/media/logo-portafolio.png" alt=""></a>
       <button id="nav-toggle" class="header__toggle" aria-label="Abrir menú" aria-expanded="false">
@@ -29,15 +29,20 @@
     <!-- HERO -->
     <section class="hero" role="img" aria-label="Fondo hero con texto de bienvenida">
       <div class="container hero__content">
-        <h1 class="hero__title">¡Hola! Soy Nombre Apellido</h1>
+        <h1 class="hero__title">¡Hola! Soy Alba Sánchez</h1>
         <p class="hero__subtitle">Desarrolladora Web Full-Stack</p>
         <p class="hero__subtitle">Técnico Microintomático</p>
       </div>
+      <!-- Indicador de scroll -->
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <span class="scroll-indicator__icon">⌄</span>
+      </div>
     </section>
+
 
         <!-- ABOUT ME -->
     <section id="about" class="about" aria-labelledby="about-title">
-      <div class="container">
+      <div class="container container-about">
         <!-- Título y subtítulo -->
         <h2 id="about-title" class="section-title">Encantada de conocerte</h2>
         <div class="about__content">
@@ -53,12 +58,14 @@
           <div class="about__details">
             <!-- Texto de presentación -->
             <div class="about__text">
-              <p>
-                Soy una desarrolladora full-stack con pasión por crear experiencias interactivas y accesibles.
-                Tengo experiencia en instalación y mantenimiento de Sistemas Operativos (Windows, Linux)
-                y configuración de hardware. Además, disfruto optimizar el rendimiento de mis proyectos
-                y automatizar tareas en terminal.
-              </p>
+              <p>Soy una desarrolladora full-stack y técnico microintomático con pasión por crear experiencias interactivas y accesibles.</p>
+              <ul>
+                <li>Tengo experiencia como community manager y mantenimiento de una web alojada en Wordpress en la que utilizabamos Elementor.</li>
+                <li>Aportando me conocimientos en SEO y marketing digital, lo que me permite crear contenido optimizado para motores de búsqueda.</li>
+                <li>Tengo conocimeintos en lenguajes de programación/marcas como JAVA, Php y JavaScript, así como en HTML y CSS.</li>
+                <li>En este momento estoy ampliando mis conocimientos en Inteligencia Artificial a través de un curso especializado, impulsado por mi interés en este área.</li>
+                <li>Me encanta aprender nuevas tecnologías y mejorar mis habilidades constantemente.</li>
+              </ul>
               <p>
                 Si quieres colaborar o simplemente charlar, no dudes en
                 <a href="#contact" class="about__link">contactarme</a>.
@@ -98,7 +105,7 @@
         <h2 id="projects-title" class="section-title">Proyectos</h2>
         <div class="projects__grid">
           <article class="project-card">
-            <img src="" alt="Proyecto 1" class="project-card__img">
+            <img src="./vista/media/pagina-vitalink.png" alt="Proyecto 1" class="project-card__img">
             <div class="project-card__info">
               <h3 class="project-card__title">Vitalink</h3>
               <p>Descripción breve del proyecto 1.</p>
@@ -176,7 +183,7 @@
     <!-- CONTACT -->
     <section id="contact" class="contact" aria-labelledby="contact-title">
       <div class="container container-form">
-        <h2 id="contact-title" class="section-title">Contact</h2>
+        <h2 id="contact-title" class="section-title">Contacto</h2>
         <form class="contact__form" novalidate>
           <div class="contact__field">
             <label for="name">Nombre:</label>
@@ -207,7 +214,6 @@
       <p class="footer__copy">© 2025 Alba Sánchez Olmedo</p>
     </div>
   </footer>
-
-  <script src="js/script.js" defer></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
