@@ -34,7 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
           char: {
             value: getRandomChar,
             font: "Courier New",
-            style: ""
+            style: "",
+            weight: "bold"
           }
         }
       },
