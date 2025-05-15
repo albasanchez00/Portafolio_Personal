@@ -16,12 +16,28 @@
 body::-webkit-scrollbar {
   display: none;
 }
-body {
+body,.contenido {
   margin: 0;
   font-family: sans-serif;
-  background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
+}
+
+#tsparticles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Asegura que esté detrás del contenido */
+    pointer-events: none; /* Permite que los clics pasen a través */
+}
+        
+/* Asegúrate de que el contenido principal tenga una posición y z-index superior */
+.contenido-principal {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente opcional */
 }
 
 .container {
@@ -211,6 +227,8 @@ main {
   text-align: center;
 }
 
+
+
 .hero__content {
   max-width: 800px;                           /* Controla ancho de línea */
   margin: 0 1rem;
@@ -243,6 +261,7 @@ main {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(10px); }
 }
+
 
 
 /* ABOUT ME (Layout dos columnas + badges) */
@@ -379,12 +398,10 @@ main {
 
 /* CONTACT */
 .contact {
-  background: var(--color-bg);
   padding: var(--spacing);
   text-align: center;
 }
 .container-form{
-  background-color: rgba(255, 255, 255, 0.8);
   padding: var(--spacing);
   border-radius: var(--radius);
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);

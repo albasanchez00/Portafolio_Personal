@@ -13,263 +13,275 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header role="banner">
-    <div class="container header__inner">
-      <a href="index.html" class="header__logo"><img src="./vista/media/logo-portafolio.png" alt=""></a>
-      <button id="nav-toggle" class="header__toggle" aria-label="Abrir menú" aria-expanded="false">
-        ☰
-      </button>
-      <nav id="nav" class="header__nav" role="navigation">
-        <ul class="header__list">
-          <li><a href="#about">Sobre mi</a></li>
-          <li><a href="#projects">Proyectos</a></li>
-          <li><a href="#contact">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <!-- HERO -->
-    <section class="hero" role="img" aria-label="Fondo hero con texto de bienvenida">
-      <div class="container hero__content">
-        <h1 class="hero__title">¡Hola! Soy Alba Sánchez</h1>
-        <p class="hero__subtitle">Desarrolladora Web Full-Stack</p>
-        <p class="hero__subtitle">Técnico Microintomático</p>
+  <div id="tsparticles"></div>
+  <section class="contenido-principal">
+    <header role="banner">
+      <div class="container header__inner">
+        <a href="index.html" class="header__logo"><img src="./vista/media/logo-portafolio.png" alt=""></a>
+        <button id="nav-toggle" class="header__toggle" aria-label="Abrir menú" aria-expanded="false">
+          ☰
+        </button>
+        <nav id="nav" class="header__nav" role="navigation">
+          <ul class="header__list">
+            <li><a href="#about">Sobre mi</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </nav>
       </div>
-      <!-- Indicador de scroll -->
-      <div class="hero__scroll-indicator" aria-hidden="true">
-        <span class="scroll-indicator__icon"><img src="./vista/media/icons/mouse-icon.svg" alt=""></span>
-      </div>
-    </section>
+    </header>
 
-
-        <!-- SOBRE MI -->
-    <section id="about" class="about" aria-labelledby="about-title">
-      <div class="container container-about">
-        <!-- Título y subtítulo -->
-        <h2 id="about-title" class="section-title">Encantada de conocerte</h2>
-        <div class="about__content">
-          <!-- Columna: Imagen -->
-          <div class="about__media">
-            <img
-              src="./vista/media/imagen-portrafolio.jpg"
-              alt="Foto de Alba Sánchez Olmedo"
-              class="about__img"
-            >
-          </div>
-          <!-- Columna: Texto + Skills -->
-          <div class="about__details">
-            <!-- Texto de presentación -->
-            <div class="about__text">
-              <p>Soy una desarrolladora full-stack y técnico microintomático con pasión por crear experiencias interactivas y accesibles.</p>
-              <ul>
-                <li>Tengo experiencia como community manager y mantenimiento de una web alojada en Wordpress en la que utilizabamos Elementor.</li>
-                <li>Aportando me conocimientos en SEO y marketing digital, lo que me permite crear contenido optimizado para motores de búsqueda.</li>
-                <li>Tengo conocimeintos en lenguajes de programación/marcas como JAVA, Php y JavaScript, así como en HTML y CSS.</li>
-                <li>En este momento estoy ampliando mis conocimientos en Inteligencia Artificial a través de un curso especializado, impulsado por mi interés en este área.</li>
-                <li>Me encanta aprender nuevas tecnologías y mejorar mis habilidades constantemente.</li>
-              </ul>
-              <p>
-                Si quieres colaborar o simplemente charlar, no dudes en
-                <a href="#contact" class="about__link">contactarme</a>.
-              </p>
+    <main>
+      <!-- HERO -->
+      <section class="hero hero--particles" role="img" aria-label="Fondo hero con texto de bienvenida">
+        <!-- contenedor tsParticles -->
+        <div id="tsparticles"></div>
+            <!-- Columna: Imagen -->
+            <div class="about__media">
+              <img
+                src="./vista/media/imagen-portrafolio.jpg"
+                alt="Foto de Alba Sánchez Olmedo"
+                class="about__img"
+              >
             </div>
-            <!-- Habilidades/Conocimientos -->
-            <div class="about__skills">
-              <h3 class="skills__title">Conocimientos:</h3>
-              <div class="skills__list">
-                <span class="skill">Inteligencia Artificial</span>
-                <span class="skill">PHP</span>
-                <span class="skill">JavaScript</span>
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">Java</span>
-                <span class="skill">MySQL</span>
-                <span class="skill">Wordpress</span>
-                <span class="skill">Elementor</span>
-                <span class="skill">SEO</span>
-                <span class="skill">Marketing Digital</span>
-                <span class="skill">Spring Boot</span>
-                <span class="skill">Instalación S.O.</span>
-                <span class="skill">Mantenimiento HW</span>
-                <span class="skill">Terminal Windows</span>
-                <span class="skill">Terminal Linux</span>
+        <div class="container hero__content">
+          <h1 class="hero__title">¡Hola! Soy Alba Sánchez</h1>
+          <p class="hero__subtitle">Desarrolladora Web Full-Stack</p>
+          <p class="hero__subtitle">Técnico Microintomático</p>
+        </div>
+
+        <!-- Indicador de scroll -->
+        <div class="hero__scroll-indicator" aria-hidden="true">
+          <span class="scroll-indicator__icon">
+            <img src="./vista/media/icons/mouse-icon.svg" alt="" />
+          </span>
+        </div>
+      </section>
+
+
+          <!-- SOBRE MI -->
+      <section id="about" class="about" aria-labelledby="about-title">
+        <div class="container container-about">
+          <!-- Título y subtítulo -->
+          <h2 id="about-title" class="section-title">Encantada de conocerte</h2>
+          <div class="about__content">
+            <!-- Columna: Texto + Skills -->
+            <div class="about__details">
+              <!-- Texto de presentación -->
+              <div class="about__text">
+                <p>Soy una desarrolladora full-stack y técnico microintomático con pasión por crear experiencias interactivas y accesibles.</p>
+                <ul>
+                  <li>Tengo experiencia como community manager y mantenimiento de una web alojada en Wordpress en la que utilizabamos Elementor.</li>
+                  <li>Aportando me conocimientos en SEO y marketing digital, lo que me permite crear contenido optimizado para motores de búsqueda.</li>
+                  <li>Tengo conocimeintos en lenguajes de programación/marcas como JAVA, Php y JavaScript, así como en HTML y CSS.</li>
+                  <li>En este momento estoy ampliando mis conocimientos en Inteligencia Artificial a través de un curso especializado, impulsado por mi interés en este área.</li>
+                  <li>Me encanta aprender nuevas tecnologías y mejorar mis habilidades constantemente.</li>
+                </ul>
+                <p>
+                  Si quieres colaborar o simplemente charlar, no dudes en
+                  <a href="#contact" class="about__link">contactarme</a>.
+                </p>
+              </div>
+              <!-- Habilidades/Conocimientos -->
+              <div class="about__skills">
+                <h3 class="skills__title">Conocimientos:</h3>
+                <div class="skills__list">
+                  <span class="skill">Inteligencia Artificial</span>
+                  <span class="skill">PHP</span>
+                  <span class="skill">JavaScript</span>
+                  <span class="skill">HTML</span>
+                  <span class="skill">CSS</span>
+                  <span class="skill">Java</span>
+                  <span class="skill">MySQL</span>
+                  <span class="skill">Wordpress</span>
+                  <span class="skill">Elementor</span>
+                  <span class="skill">SEO</span>
+                  <span class="skill">Marketing Digital</span>
+                  <span class="skill">Spring Boot</span>
+                  <span class="skill">Instalación S.O.</span>
+                  <span class="skill">Mantenimiento HW</span>
+                  <span class="skill">Terminal Windows</span>
+                  <span class="skill">Terminal Linux</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
 
-    <!-- PROYECTOS -->
-    <section id="projects" class="projects" aria-labelledby="projects-title">
-      <div class="container">
-        <h2 id="projects-title" class="section-title">Proyectos</h2>
-        <div class="projects__grid">
-          <article class="project-card">
-            <img src="./vista/media/pagina-vitalink.png" alt="Proyecto 1" class="project-card__img">
-            <div class="project-card__info">
-              <h3 class="project-card__title">Vitalink</h3>
-              <p>Proeycto creado para asistir a pacientes desde casa</p>
-              <div class="skills__list">
-                <span class="skill">IA</span>
-                <span class="skill">Spring boot</span>
-                <span class="skill">HTML</span>
-                <span class="skill">css</span>
-                <span class="skill">JavaScript</span>
+      <!-- PROYECTOS -->
+      <section id="projects" class="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <h2 id="projects-title" class="section-title">Proyectos</h2>
+          <div class="projects__grid">
+            <article class="project-card">
+              <img src="./vista/media/pagina-vitalink.png" alt="Proyecto 1" class="project-card__img">
+              <div class="project-card__info">
+                <h3 class="project-card__title">Vitalink</h3>
+                <p>Proeycto creado para asistir a pacientes desde casa</p>
+                <div class="skills__list">
+                  <span class="skill">IA</span>
+                  <span class="skill">Spring boot</span>
+                  <span class="skill">HTML</span>
+                  <span class="skill">css</span>
+                  <span class="skill">JavaScript</span>
+                </div>
+                <a href="#" class="project-card__btn">Ver más</a>
               </div>
-              <a href="#" class="project-card__btn">Ver más</a>
-            </div>
-          </article>
+            </article>
 
-          <article class="project-card">
-            <img src="./vista/media/pagina-cobalto.png" alt="Proyecto 1" class="project-card__img">
-            <div class="project-card__info">
-              <h3 class="project-card__title">Cobalto AI</h3>
-              <p>Descripción breve del proyecto 1.</p>
-              <div class="skills__list">
-                <span class="skill">IA</span>
-                <span class="skill">Wordpress</span>
-                <span class="skill">IMPREZA</span>
-                <span class="skill">PHP</span>
-                <span class="skill">MySql</span>
+            <article class="project-card">
+              <img src="./vista/media/pagina-cobalto.png" alt="Proyecto 1" class="project-card__img">
+              <div class="project-card__info">
+                <h3 class="project-card__title">Cobalto AI</h3>
+                <p>Descripción breve del proyecto 1.</p>
+                <div class="skills__list">
+                  <span class="skill">IA</span>
+                  <span class="skill">Wordpress</span>
+                  <span class="skill">IMPREZA</span>
+                  <span class="skill">PHP</span>
+                  <span class="skill">MySql</span>
+                </div>
+                <a href="#" class="project-card__btn">Ver más</a>
               </div>
-              <a href="#" class="project-card__btn">Ver más</a>
-            </div>
-          </article>
+            </article>
 
-          <article class="project-card">
-            <img src="./vista/media/pagina-pryme-abogados.png" alt="Proyecto 1" class="project-card__img">
-            <div class="project-card__info">
-              <h3 class="project-card__title">Pyme Abogados</h3>
-              <p>Descripción breve del proyecto 1.</p>
-              <div class="skills__list">
-                <span class="skill">Wordpress</span>
-                <span class="skill">Elementor</span>
-                <span class="skill">PHP</span>
-                <span class="skill">MySql</span>
+            <article class="project-card">
+              <img src="./vista/media/pagina-pryme-abogados.png" alt="Proyecto 1" class="project-card__img">
+              <div class="project-card__info">
+                <h3 class="project-card__title">Pyme Abogados</h3>
+                <p>Descripción breve del proyecto 1.</p>
+                <div class="skills__list">
+                  <span class="skill">Wordpress</span>
+                  <span class="skill">Elementor</span>
+                  <span class="skill">PHP</span>
+                  <span class="skill">MySql</span>
+                </div>
+                <a href="#" class="project-card__btn">Ver más</a>
               </div>
-              <a href="#" class="project-card__btn">Ver más</a>
-            </div>
-          </article>
+            </article>
 
-          <article class="project-card">
-            <img src="./vista/media/pagina-deColores.png" alt="Proyecto 1" class="project-card__img">
-            <div class="project-card__info">
-              <h3 class="project-card__title">DeColores</h3>
-              <p>Descripción breve del proyecto 1.</p>
-              <div class="skills__list">
-                <span class="skill">Wordpress</span>
-                <span class="skill">Elementor</span>
-                <span class="skill">PHP</span>
-                <span class="skill">MySql</span>
+            <article class="project-card">
+              <img src="./vista/media/pagina-deColores.png" alt="Proyecto 1" class="project-card__img">
+              <div class="project-card__info">
+                <h3 class="project-card__title">DeColores</h3>
+                <p>Descripción breve del proyecto 1.</p>
+                <div class="skills__list">
+                  <span class="skill">Wordpress</span>
+                  <span class="skill">Elementor</span>
+                  <span class="skill">PHP</span>
+                  <span class="skill">MySql</span>
+                </div>
+                <a href="#" class="project-card__btn">Ver más</a>
               </div>
-              <a href="#" class="project-card__btn">Ver más</a>
-            </div>
-          </article>
+            </article>
 
-          <article class="project-card">
-            <img src="./vista/media/pagina-adidas.png" alt="Proyecto 1" class="project-card__img">
-            <div class="project-card__info">
-              <h3 class="project-card__title">Adidas Web</h3>
-              <p>Descripción breve del proyecto 1.</p>
-              <div class="skills__list">
-                <span class="skill">PHP</span>
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">MySql</span>
+            <article class="project-card">
+              <img src="./vista/media/pagina-adidas.png" alt="Proyecto 1" class="project-card__img">
+              <div class="project-card__info">
+                <h3 class="project-card__title">Adidas Web</h3>
+                <p>Descripción breve del proyecto 1.</p>
+                <div class="skills__list">
+                  <span class="skill">PHP</span>
+                  <span class="skill">HTML</span>
+                  <span class="skill">CSS</span>
+                  <span class="skill">MySql</span>
+                </div>
+                <a href="#" class="project-card__btn">Ver más</a>
               </div>
-              <a href="#" class="project-card__btn">Ver más</a>
-            </div>
-          </article>
+            </article>
 
-          <article class="project-card">
-            <img src="./vista/media/pagina-banca.png" alt="Proyecto 1" class="project-card__img">
-            <div class="project-card__info">
-              <h3 class="project-card__title">Banca Online</h3>
-              <p>Descripción breve del proyecto 1.</p>
-              <div class="skills__list">
-                <span class="skill">PHP</span>
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">MySql</span>
+            <article class="project-card">
+              <img src="./vista/media/pagina-banca.png" alt="Proyecto 1" class="project-card__img">
+              <div class="project-card__info">
+                <h3 class="project-card__title">Banca Online</h3>
+                <p>Descripción breve del proyecto 1.</p>
+                <div class="skills__list">
+                  <span class="skill">PHP</span>
+                  <span class="skill">HTML</span>
+                  <span class="skill">CSS</span>
+                  <span class="skill">MySql</span>
+                </div>
+                <a href="#" class="project-card__btn">Ver más</a>
               </div>
-              <a href="#" class="project-card__btn">Ver más</a>
-            </div>
-          </article>
+            </article>
 
-          <article class="project-card">
-            <img src="./vista/media/pagina-cepa.png" alt="Proyecto 1" class="project-card__img">
-            <div class="project-card__info">
-              <h3 class="project-card__title">CEPA</h3>
-              <p>Descripción breve del proyecto 1.</p>
-              <div class="skills__list">
-                <span class="skill">PHP</span>
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">MySql</span>
+            <article class="project-card">
+              <img src="./vista/media/pagina-cepa.png" alt="Proyecto 1" class="project-card__img">
+              <div class="project-card__info">
+                <h3 class="project-card__title">CEPA</h3>
+                <p>Descripción breve del proyecto 1.</p>
+                <div class="skills__list">
+                  <span class="skill">PHP</span>
+                  <span class="skill">HTML</span>
+                  <span class="skill">CSS</span>
+                  <span class="skill">MySql</span>
+                </div>
+                <a href="#" class="project-card__btn">Ver más</a>
               </div>
-              <a href="#" class="project-card__btn">Ver más</a>
-            </div>
-          </article>
+            </article>
 
-          <article class="project-card">
-            <img src="./vista/media/pagina-uship.png" alt="Proyecto 1" class="project-card__img">
-            <div class="project-card__info">
-              <h3 class="project-card__title">Uship</h3>
-              <p>Descripción breve del proyecto 1.</p>
-              <div class="skills__list">
-                <span class="skill">PHP</span>
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">MySql</span>
+            <article class="project-card">
+              <img src="./vista/media/pagina-uship.png" alt="Proyecto 1" class="project-card__img">
+              <div class="project-card__info">
+                <h3 class="project-card__title">Uship</h3>
+                <p>Descripción breve del proyecto 1.</p>
+                <div class="skills__list">
+                  <span class="skill">PHP</span>
+                  <span class="skill">HTML</span>
+                  <span class="skill">CSS</span>
+                  <span class="skill">MySql</span>
+                </div>
+                <a href="#" class="project-card__btn">Ver más</a>
               </div>
-              <a href="#" class="project-card__btn">Ver más</a>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CONTACTO -->
-    <section id="contact" class="contact" aria-labelledby="contact-title">
-      <div class="container container-form">
-        <h2 id="contact-title" class="section-title">Contacto</h2>
-        <form class="contact__form" novalidate>
-          <div class="contact__field">
-            <label for="name">Nombre:</label>
-            <input id="name" name="name" type="text" required>
-          </div>
-          <div class="contact__field">
-            <label for="email">Email:</label>
-            <input id="email" name="email" type="email" placeholder="example@domain.com" required>
-          </div>
-          <div class="contact__field">
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" rows="4" placeholder="Hola...." required></textarea>
-          </div>
-          <button type="submit" class="contact__btn btn--primary">Enviar</button>
-        </form>
-      </div>
-    </section>
-    
-    <!-- Botón "volver arriba" -->
-    <button id="scrollToTopBtn" aria-label="Volver al inicio" title="Volver arriba">↑</button>
-  </main>
+      <!-- CONTACTO -->
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <div class="container container-form">
+          <h2 id="contact-title" class="section-title">Contacto</h2>
+          <form class="contact__form" novalidate>
+            <div class="contact__field">
+              <label for="name">Nombre:</label>
+              <input id="name" name="name" type="text" required>
+            </div>
+            <div class="contact__field">
+              <label for="email">Email:</label>
+              <input id="email" name="email" type="email" placeholder="example@domain.com" required>
+            </div>
+            <div class="contact__field">
+              <label for="message">Mensaje:</label>
+              <textarea id="message" name="message" rows="4" placeholder="Hola...." required></textarea>
+            </div>
+            <button type="submit" class="contact__btn btn--primary">Enviar</button>
+          </form>
+        </div>
+      </section>
+      
+      <!-- Botón "volver arriba" -->
+      <button id="scrollToTopBtn" aria-label="Volver al inicio" title="Volver arriba">↑</button>
+    </main>
 
-  <footer class="footer" role="contentinfo">
-    <div class="container footer__inner">
-      <div class="footer__social">
-        <a href="https://github.com/albasanchez00" aria-label="GitHub"><img src="./vista/media/icons/github.png" alt=""></a>
-        <a href="https://www.linkedin.com/in/alba-s%C3%A1nchez-olmedo-8a3a412a9/" aria-label="LinkedIn"><img src="./vista/media/icons/linkedin-svgrepo-com.svg" alt=""></a>
+    <footer class="footer" role="contentinfo">
+      <div class="container footer__inner">
+        <div class="footer__social">
+          <a href="https://github.com/albasanchez00" aria-label="GitHub"><img src="./vista/media/icons/github.png" alt=""></a>
+          <a href="https://www.linkedin.com/in/alba-s%C3%A1nchez-olmedo-8a3a412a9/" aria-label="LinkedIn"><img src="./vista/media/icons/linkedin-svgrepo-com.svg" alt=""></a>
+        </div>
+        <p class="footer__copy">© 2025 Alba Sánchez Olmedo</p>
       </div>
-      <p class="footer__copy">© 2025 Alba Sánchez Olmedo</p>
-    </div>
-  </footer>
+    </footer>
+  </section>  
+  
   
   <script src="./js/script.js"></script>
   <script src="./js/scroll.js"></script>
+  <!-- tsParticles -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <script src="./js/particles.js"></script>
 </body>
 </html>
