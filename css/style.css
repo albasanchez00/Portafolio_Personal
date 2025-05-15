@@ -8,9 +8,7 @@
   --radius: 0.5rem;
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 body::-webkit-scrollbar {
@@ -36,7 +34,7 @@ body,.contenido {
 .contenido-principal {
     position: relative;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente opcional */
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente opcional */
 }
 
 .container {
@@ -49,6 +47,7 @@ body,.contenido {
     text-align: center;
   }
 }
+
 
 /* Menú de navegación mejorado */
 /* HEADER y NAV - Estilo mejorado */
@@ -82,7 +81,6 @@ header {
   width: auto;
   border-radius: 50%;
 }
-
 /* Botón de menú hamburguesa */
 .header__toggle {
   display: block;
@@ -101,7 +99,6 @@ header {
   background-color: rgba(0, 122, 204, 0.1);
   outline: none;
 }
-
 /* Menú de navegación */
 .header__nav {
   position: absolute;
@@ -164,7 +161,6 @@ header {
   color: var(--color-primary);
   padding-left: 1.5rem;
 }
-
 /* Versión responsive para tablets y desktop */
 @media (min-width: 768px) {
   .header__toggle {
@@ -202,12 +198,13 @@ header {
     padding-left: 1rem;
   }
 }
-
 /* Ajuste para el contenido principal */
 main {
   padding-top: 80px; /* Mismo valor que la altura del header */
 }
 
+
+/* HERO SECTION */
 /* Aseguramos que el hero se muestre correctamente */
 .hero {
   min-height: calc(100vh - 80px);
@@ -216,20 +213,18 @@ main {
 /* HERO: full-screen, patrón de fondo y contenido centrado */
 .hero {
   position: relative;
-  background: url('../assets/hero-bg.svg')    /* Patrón de fondo */
+  background: url('../assets/hero-bg.svg') /* Patrón de fondo */
               center/cover no-repeat;
   display: flex;
   flex-direction: column;
-  justify-content: center;                    /* Centra verticalmente */
-  align-items: center;                        /* Centra horizontalmente */
-  padding: 0;                                 /* Quitamos padding extra */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  padding: 0; /* Quitamos padding extra */
   text-align: center;
 }
 
-
-
 .hero__content {
-  max-width: 800px;                           /* Controla ancho de línea */
+  max-width: 800px; /* Controla ancho de línea */
   margin: 0 1rem;
 }
 

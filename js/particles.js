@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       },
       size: { 
-        value: 12,
+        value: 14,
         random: {
           enable: true,
           minimumValue: 10
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
       life: {
         duration: {
           sync: false,
-          value: 20
+          value: 30
         },
         count: 1
       }
