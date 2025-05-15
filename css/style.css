@@ -433,6 +433,30 @@ main {
 }
 
 
+/* Boton Scroll */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: #007ACC; /* Color principal */
+  color: white;
+  cursor: pointer;
+  display: none; /* Oculto por defecto */
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #005fa3;
+}
+
+
 /* FOOTER */
 .footer {
   text-align: center;
