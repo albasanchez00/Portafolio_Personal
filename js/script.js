@@ -79,3 +79,34 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const projectButtons = document.querySelectorAll('.project-card__btn');
+
+  projectButtons.forEach(btn => {
+    const href = btn.getAttribute('href');
+
+    if (!href || href === '#') {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        // Eliminar tooltip anterior si existe
+        const existing = btn.parentElement.querySelector('.tooltip-msg');
+        if (existing) existing.remove();
+
+        // Crear mensaje tooltip
+        const tooltip = document.createElement('div');
+        tooltip.className = 'tooltip-msg';
+        tooltip.textContent = 'Este proyecto aún no está disponible.';
+
+        btn.parentElement.appendChild(tooltip);
+
+        // Ocultar automáticamente después de 3 segundos
+        setTimeout(() => {
+          tooltip.remove();
+        }, 3000);
+      });
+    }
+  });
+});
+
