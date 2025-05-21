@@ -17,13 +17,16 @@
   <section class="contenido-principal">
     <header role="banner">
       <div class="container header__inner">
-        <a href="index.html" class="header__logo"><img src="./vista/media/logo-portafolio.png" alt=""></a>
+        <picture class="header__logo">
+          <a href="index.html"><img src="./vista/media/logo-portafolio.png" alt=""></a>
+        </picture>
         <button id="nav-toggle" class="header__toggle" aria-label="Abrir menú" aria-expanded="false">
           ☰
         </button>
         <nav id="nav" class="header__nav" role="navigation">
           <ul class="header__list">
             <li><a href="#about">Sobre mi</a></li>
+            <li><a href="#career">Formación y Experiencia</a></li>
             <li><a href="#projects">Proyectos</a></li>
             <li><a href="#contact">Contacto</a></li>
           </ul>
@@ -75,7 +78,7 @@
                   <li>Tengo experiencia como community manager y mantenimiento de una web alojada en Wordpress en la que utilizabamos Elementor.</li>
                   <li>Aportando me conocimientos en SEO y marketing digital, lo que me permite crear contenido optimizado para motores de búsqueda.</li>
                   <li>Tengo conocimeintos en lenguajes de programación/marcas como JAVA, Php y JavaScript, así como en HTML y CSS.</li>
-                  <li>En este momento estoy ampliando mis conocimientos en Inteligencia Artificial a través de un curso especializado, impulsado por mi interés en este área.</li>
+                  <li>En este momento estoy ampliando mis conocimientos en Inteligencia Artificial a través de un curso especializado (Racks Academy), impulsado por mi interés en este área.</li>
                   <li>Me encanta aprender nuevas tecnologías y mejorar mis habilidades constantemente.</li>
                 </ul>
                 <p>
@@ -93,16 +96,16 @@
                   <span class="skill">HTML</span>
                   <span class="skill">CSS</span>
                   <span class="skill">Java</span>
+                  <span class="skill">Spring Boot</span>
                   <span class="skill">MySQL</span>
                   <span class="skill">Wordpress</span>
                   <span class="skill">Elementor</span>
                   <span class="skill">SEO</span>
                   <span class="skill">Marketing Digital</span>
-                  <span class="skill">Spring Boot</span>
                   <span class="skill">Instalación S.O.</span>
-                  <span class="skill">Mantenimiento HW</span>
-                  <span class="skill">Terminal Windows</span>
-                  <span class="skill">Terminal Linux</span>
+                  <span class="skill">Windows</span>
+                  <span class="skill">Linux</span>
+                  <span class="skill">Montaje y Mantenimiento de Equipos</span>
                 </div>
               </div>
             </div>
@@ -303,7 +306,7 @@
       <section id="contact" class="contact" aria-labelledby="contact-title">
         <div class="container container-form">
           <h2 id="contact-title" class="section-title">Contacto</h2>
-          <form class="contact__form" novalidate>
+          <form class="contact__form" action="https://formsubmit.co/alba.sanchez@email.com" method="POST">
             <div class="contact__field">
               <label for="name">Nombre:</label>
               <input id="name" name="name" type="text" required>
@@ -316,10 +319,38 @@
               <label for="message">Mensaje:</label>
               <textarea id="message" name="message" rows="4" placeholder="Hola...." required></textarea>
             </div>
+            <div class="contact__field contact__checkbox">
+              <label>
+                <input type="checkbox" id="terms" required>
+                Acepto la <a href="#politica" target="_blank">política de privacidad</a> y los términos de uso.
+              </label>
+            </div>
+
+            <!-- Campos ocultos opcionales -->
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde el portafolio">
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://tudominio.com/gracias.html">
+
             <button type="submit" class="contact__btn btn--primary">Enviar</button>
           </form>
+
         </div>
       </section>
+
+      <div class="social-sidebar" aria-label="Redes sociales">
+        <a href="https://github.com/albasanchez00" target="_blank" aria-label="GitHub">
+          <img src="./vista/media/icons/github.png" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/alba-s%C3%A1nchez-olmedo-8a3a412a9/" target="_blank" aria-label="LinkedIn">
+          <img src="./vista/media/icons/linkedin-svgrepo-com.svg" alt="LinkedIn">
+        </a>
+        <a href="mailto:alba.freelancer.developer@gmail.com" aria-label="Enviar correo">
+          <img src="./vista/media/icons/email-icon.svg" alt="Correo electrónico">
+        </a>
+      </div>
+
+
       
       <!-- Botón "volver arriba" -->
       <button id="scrollToTopBtn" aria-label="Volver al inicio" title="Volver arriba">↑</button>
