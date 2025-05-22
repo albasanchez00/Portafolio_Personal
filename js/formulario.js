@@ -1,8 +1,10 @@
+// Este script valida un formulario de contacto y muestra mensajes de error
 document.addEventListener('DOMContentLoaded', () => {
+  // Selecciona el formulario de contacto
   const form = document.querySelector('.contact__form');
-
   if (!form) return;
 
+  // Si no existe el formulario, no hacemos nada
   form.addEventListener('submit', e => {
     let isValid = true;
 
@@ -52,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // No se llama a preventDefault, por lo tanto se enviará correctamente
     }
   });
-
+  // Función para mostrar mensajes de error
   function showError(input, message) {
     const error = document.createElement('p');
     error.textContent = message;

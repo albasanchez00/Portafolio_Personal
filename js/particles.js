@@ -1,3 +1,4 @@
+// Cargar tsParticles desde un CDN si no está ya cargado
 document.addEventListener('DOMContentLoaded', () => {
   if (typeof tsParticles === 'undefined') {
     console.error('tsParticles no está cargado');

@@ -1,3 +1,16 @@
+// Este script maneja la traducción de los textos del formulario
+const traducciones = {
+  es: {
+    enviar: "Enviar",
+    error: "Completa todos los campos."
+  },
+  en: {
+    enviar: "Send",
+    error: "Please complete all fields."
+  }
+};
+
+
 // Mejora del script para el menú de navegación
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.getElementById('nav-toggle');
@@ -80,6 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Este script maneja la creación de tooltips para los botones de proyectos
 document.addEventListener('DOMContentLoaded', () => {
   const projectButtons = document.querySelectorAll('.project-card__btn');
 
@@ -110,22 +124,35 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+// Este script maneja la validación del formulario y la redirección al gestor de correo
 document.addEventListener('DOMContentLoaded', () => {
   const correoBtn = document.getElementById('correoDirecto');
   const toast = document.getElementById('toast');
 
   if (correoBtn) {
     correoBtn.addEventListener('click', (e) => {
-      e.preventDefault(); // Previene la redirección inmediata
+      e.preventDefault();
 
-      // Mostrar mensaje tipo toast
       toast.textContent = 'Abriendo tu gestor de correo...';
       toast.classList.add('show');
 
+      let fallbackTimeout = setTimeout(() => {
+        // Si tras 1.2 segundos no se redirigió por mailto, usamos Gmail
+        window.open("https://mail.google.com/mail/?view=cm&fs=1&to=alba.freelancer.developer@gmail.com", '_blank');
+      }, 1200);
+
+      // Dispara el mailto (puede abrir app externa o nueva pestaña)
+      window.location.href = "mailto:alba.freelancer.developer@gmail.com";
+
+      // Ocultar toast tras 3s
       setTimeout(() => {
         toast.classList.remove('show');
-        window.open("https://mail.google.com/mail/?view=cm&fs=1&to=alba.freelancer.developer@gmail.com");
-      }, 1000); // Espera 1 segundo antes de abrir el mailto
+      }, 3000);
+
+      // Si el usuario realmente redirige con mailto, el script se interrumpe.
+      // Si no, el setTimeout cae y Gmail se abre.
     });
   }
 });
+
