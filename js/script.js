@@ -110,3 +110,22 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const correoBtn = document.getElementById('correoDirecto');
+  const toast = document.getElementById('toast');
+
+  if (correoBtn) {
+    correoBtn.addEventListener('click', (e) => {
+      e.preventDefault(); // Previene la redirección inmediata
+
+      // Mostrar mensaje tipo toast
+      toast.textContent = 'Abriendo tu gestor de correo...';
+      toast.classList.add('show');
+
+      setTimeout(() => {
+        toast.classList.remove('show');
+        window.open("https://mail.google.com/mail/?view=cm&fs=1&to=alba.freelancer.developer@gmail.com");
+      }, 1000); // Espera 1 segundo antes de abrir el mailto
+    });
+  }
+});

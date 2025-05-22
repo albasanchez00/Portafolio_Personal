@@ -4,20 +4,19 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!form) return;
 
   form.addEventListener('submit', e => {
-    e.preventDefault();
+    let isValid = true;
 
     const name = form.name.value.trim();
     const email = form.email.value.trim();
     const message = form.message.value.trim();
+    const termsAccepted = form.querySelector('#terms').checked;
 
-    // Expresión regular para email simple
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     // Limpia errores previos
     form.querySelectorAll('.error-msg').forEach(el => el.remove());
 
-    let isValid = true;
-
+    // Validaciones
     if (name.length < 3) {
       showError(form.name, 'Por favor, introduce tu nombre (mínimo 3 caracteres).');
       isValid = false;
@@ -33,17 +32,34 @@ document.addEventListener('DOMContentLoaded', () => {
       isValid = false;
     }
 
-
-    const termsAccepted = form.querySelector('#terms').checked;
     if (!termsAccepted) {
-    showError(form.querySelector('#terms'), 'Debes aceptar la política de privacidad.');
-    isValid = false;
+      showError(form.querySelector('#terms'), 'Debes aceptar la política de privacidad.');
+      isValid = false;
     }
 
-    if (isValid) {
-      // Aquí puedes manejar el envío real (backend o EmailJS, por ejemplo)
-      alert('Formulario enviado correctamente.');
-      form.reset();
+    if (!isValid) {
+      e.preventDefault(); // solo evita el envío si hay errores
+    } else {
+      // Mostrar mensaje tipo toast si tienes <div id="toast"></div>
+      const toast = document.getElementById('toast');
+      if (toast) {
+        toast.textContent = 'Mensaje enviado correctamente. Gracias por contactar.';
+        toast.classList.add('show');
+        setTimeout(() => {
+          toast.classList.remove('show');
+        }, 4000);
+      }
+      // No se llama a preventDefault, por lo tanto se enviará correctamente
     }
   });
+
+  function showError(input, message) {
+    const error = document.createElement('p');
+    error.textContent = message;
+    error.className = 'error-msg';
+    error.style.color = 'red';
+    error.style.fontSize = '0.875rem';
+    error.style.margin = '4px 0 8px';
+    input.insertAdjacentElement('afterend', error);
+  }
 });

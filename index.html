@@ -306,7 +306,7 @@
       <section id="contact" class="contact" aria-labelledby="contact-title">
         <div class="container container-form">
           <h2 id="contact-title" class="section-title">Contacto</h2>
-          <form class="contact__form" action="https://formsubmit.co/alba.sanchez@email.com" method="POST">
+          <form class="contact__form" action="https://formsubmit.co/alba.freelancer.developer@gmail.com" method="POST">
             <div class="contact__field">
               <label for="name">Nombre:</label>
               <input id="name" name="name" type="text" required>
@@ -326,11 +326,12 @@
               </label>
             </div>
 
+            <div id="toast" class="toast" role="alert" aria-live="polite"></div>
+
             <!-- Campos ocultos opcionales -->
             <input type="hidden" name="_subject" value="Nuevo mensaje desde el portafolio">
             <input type="hidden" name="_template" value="box">
             <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://tudominio.com/gracias.html">
 
             <button type="submit" class="contact__btn btn--primary">Enviar</button>
           </form>
@@ -345,7 +346,7 @@
         <a href="https://www.linkedin.com/in/alba-s%C3%A1nchez-olmedo-8a3a412a9/" target="_blank" aria-label="LinkedIn">
           <img src="./vista/media/icons/linkedin-svgrepo-com.svg" alt="LinkedIn">
         </a>
-        <a href="mailto:alba.freelancer.developer@gmail.com" aria-label="Enviar correo">
+        <a href="#" id="correoDirecto" aria-label="Enviar correo">
           <img src="./vista/media/icons/email-icon.svg" alt="Correo electrónico">
         </a>
       </div>
@@ -373,5 +374,6 @@
   <!-- tsParticles -->
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
   <script src="./js/particles.js"></script>
+  <div id="toast" class="toast" role="alert" aria-live="polite"></div>
 </body>
 </html>
