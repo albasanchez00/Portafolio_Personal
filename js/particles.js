@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
       life: {
         duration: {
           sync: false,
-          value: 30
+          value: Infinity
         },
         count: 1
       }
