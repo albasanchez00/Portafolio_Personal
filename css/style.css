@@ -650,6 +650,30 @@ main {
   filter: brightness(0) saturate(100%) invert(28%) sepia(87%) saturate(4310%) hue-rotate(188deg) brightness(91%) contrast(101%);
 }
 
+@media (max-width: 768px) {
+  .social-sidebar {
+    display: none; /* Oculta la versión flotante en móvil */
+  }
+
+  .social-bar-mobile {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    background: white;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .social-bar-mobile img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+
+
+
 /* Boton Scroll */
 #scrollToTopBtn {
   position: fixed;
