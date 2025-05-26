@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div id="tsparticles"></div>
   <section class="contenido-principal">
     <header role="banner">
       <div class="container header__inner">
@@ -58,28 +57,29 @@
       </div>
       <!-- HERO -->
       <section class="hero hero--particles" role="img" aria-label="Fondo hero con texto de bienvenida">
-        <!-- contenedor tsParticles -->
-        <div id="tsparticles"></div>
-            <!-- Columna: Imagen -->
-            <div class="about__media">
-              <img
-                src="./vista/media/imagen-portrafolio.jpg"
-                alt="Foto de Alba Sánchez Olmedo"
-                class="about__img"
-              >
-            </div>
-        <div class="container hero__content">
-          <h1 class="hero__title">¡Hola! Soy Alba Sánchez</h1>
-          <p class="hero__subtitle">Desarrolladora Web Full-Stack</p>
-          <p class="hero__subtitle">Técnico Microintomático</p>
-        </div>
+        <div id="tsparticles-hero"></div>
+        <div class="hero__content">
+          <!-- Columna: Imagen -->
+          <div class="about__media">
+            <img
+              src="./vista/media/imagen-portrafolio.jpg"
+              alt="Foto de Alba Sánchez Olmedo"
+              class="about__img"
+            >
+          </div>
+          <div class="container hero__content">
+            <h1 class="hero__title">¡Hola! Soy Alba Sánchez</h1>
+            <p class="hero__subtitle">Desarrolladora Web Full-Stack</p>
+            <p class="hero__subtitle">Técnico Microintomático</p>
+          </div>
 
-        <!-- Indicador de scroll -->
-        <div class="hero__scroll-indicator" aria-hidden="true">
-          <span class="scroll-indicator__icon">
-            <img src="./vista/media/icons/mouse-icon.svg" alt="" />
-          </span>
-        </div>
+          <!-- Indicador de scroll -->
+          <div class="hero__scroll-indicator" aria-hidden="true">
+            <span class="scroll-indicator__icon">
+              <img src="./vista/media/icons/mouse-icon.svg" alt="" />
+            </span>
+          </div>
+        </div>    
       </section>
 
 
@@ -137,57 +137,89 @@
       <section id="career" class="career" aria-labelledby="career-title">
         <div class="container">
           <!-- Formación Académica -->
-          <div class="career-block">
-            <h2 class="career-block__title">Formación Académica</h2>
-            <div class="card-list">
-              <div class="card">
+          <!-- Línea de tiempo para formación -->
+          <div class="timeline timeline--alt">
+            <div class="timeline__item left">
+              <div class="timeline__content">
+                <span class="timeline__date">02/2025 – En curso</span>
                 <h3>Programación de Sistemas Informáticos</h3>
-                <p class="card-sub">CEAT Formación · Actualmente</p>
-                <p class="card-date">02/2025 – En curso</p>
+                <p>CEAT Formación</p>
               </div>
-              <div class="card">
+            </div>
+            <div class="timeline__item right">
+              <div class="timeline__content">
+                <span class="timeline__date">03/2024 – 01/2025</span>
                 <h3>Desarrollo de Aplicaciones con Tecnología Web</h3>
-                <p class="card-sub">CEAT Formación</p>
-                <p class="card-date">03/2024 – 01/2025</p>
+                <p>CEAT Formación</p>
               </div>
-              <div class="card">
+            </div>
+            <div class="timeline__item left">
+              <div class="timeline__content">
+                <span class="timeline__date">09/2022 – 06/2023</span>
                 <h3>Técnico en Sistemas Microinformáticos y Redes</h3>
-                <p class="card-sub">IES Juan Bosco</p>
-                <p class="card-date">09/2022 – 06/2023</p>
+                <p>IES Juan Bosco</p>
               </div>
             </div>
           </div>
 
-          <!-- Experiencia Profesional -->
+
           <div class="career-block">
             <h2 class="career-block__title">Experiencia Profesional</h2>
-            <div class="card-list">
-              <div class="card">
-                <h3>Community Manager <span>(Prácticas Dual)</span></h3>
-                <p class="card-sub">ELITE CB / OMHOKIDS</p>
-                <p class="card-date">03/2024 – 01/2025</p>
-                <p>Gestión de redes, contenido y tienda online con Wordpress, Elementor, Pinterest, Meta y Amazon.</p>
+            <div class="exp-accordion">
+              <div class="exp-panel">
+                <button class="exp-header">
+                  <div>
+                    <h3>Community Manager</h3>
+                    <p class="exp-sub">ELITE CB / OMHOKIDS — 03/2024 – 01/2025</p>
+                  </div>
+                  <span class="exp-toggle">+</span>
+                </button>
+                <div class="exp-body">
+                  <p>Gestión de redes sociales, creación de contenido visual y textual para Instagram, Pinterest y Meta. Mantenimiento de tienda online en Wordpress mediante Elementor. Coordinación con Amazon Seller.</p>
+                </div>
               </div>
-              <div class="card">
-                <h3>Relaciones Públicas <span>(Prácticas)</span></h3>
-                <p class="card-sub">Be The Event</p>
-                <p class="card-date">05/2023 – 06/2023</p>
-                <p>Organización de eventos turísticos y generación de contenido para redes.</p>
+
+              <div class="exp-panel">
+                <button class="exp-header">
+                  <div>
+                    <h3>Relaciones Públicas</h3>
+                    <p class="exp-sub">Be The Event — 05/2023 – 06/2023</p>
+                  </div>
+                  <span class="exp-toggle">+</span>
+                </button>
+                <div class="exp-body">
+                  <p>Colaboración en la organización de eventos turísticos, gestión de participantes y dinamización de redes sociales para visibilidad del evento.</p>
+                </div>
               </div>
-              <div class="card">
-                <h3>Técnico de Soporte y Atención al Cliente <span>(Prácticas)</span></h3>
-                <p class="card-sub">ALVIC (Enter4)</p>
-                <p class="card-date">03/2023 – 05/2023</p>
-                <p>Instalación y reparación de hardware. Asistencia remota mediante interfono.</p>
+
+              <div class="exp-panel">
+                <button class="exp-header">
+                  <div>
+                    <h3>Técnico de Soporte y Atención al Cliente</h3>
+                    <p class="exp-sub">ALVIC (Enter4) — 03/2023 – 05/2023</p>
+                  </div>
+                  <span class="exp-toggle">+</span>
+                </button>
+                <div class="exp-body">
+                  <p>Instalación y reparación de equipos informáticos, configuración de sistemas operativos, atención remota mediante interfono técnico.</p>
+                </div>
               </div>
-              <div class="card">
-                <h3>Camarera y Barra</h3>
-                <p class="card-sub">Restaurante Terraza El Porrón</p>
-                <p class="card-date">06/2022 – 02/2024</p>
-                <p>Atención al cliente, manejo de TPV y software Ágora.</p>
+
+              <div class="exp-panel">
+                <button class="exp-header">
+                  <div>
+                    <h3>Camarera y Barra</h3>
+                    <p class="exp-sub">Restaurante Terraza El Porrón — 06/2022 – 02/2024</p>
+                  </div>
+                  <span class="exp-toggle">+</span>
+                </button>
+                <div class="exp-body">
+                  <p>Atención al cliente, manejo de terminales TPV, toma de comandas, gestión de cobros y coordinación con cocina. Uso del software Ágora.</p>
+                </div>
               </div>
             </div>
           </div>
+
         </div>
       </section>
 

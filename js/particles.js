@@ -18,7 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
     return matrixChars[Math.floor(Math.random() * matrixChars.length)];
   };
   
-  tsParticles.load('tsparticles', {
+  tsParticles.load('tsparticles-hero', {
+    fullScreen: { enable: false },
     fpsLimit: 30,
     background: {
       // fondo transparente
@@ -35,8 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
           char: {
             value: getRandomChar,
             font: "Courier New",
-            style: "",
-            weight: "bold"
+            style: ""
           }
         }
       },
@@ -44,11 +44,11 @@ document.addEventListener('DOMContentLoaded', () => {
         value: ["#035e9b", "#1f2a37", "#2b4b72", "#007acc"] 
       },
       number: { 
-        value: 70, 
+        value: 50, 
         density: { enable: true, area: 800 } 
       },
       opacity: { 
-        value: 0.9,
+        value: 0.5,
         random: true,
         anim: {
           enable: true,

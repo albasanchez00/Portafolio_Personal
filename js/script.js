@@ -156,3 +156,23 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const panels = document.querySelectorAll('.exp-panel');
+
+  panels.forEach(panel => {
+    const btn = panel.querySelector('.exp-header');
+    btn.addEventListener('click', () => {
+      const isActive = panel.classList.contains('active');
+
+      // Cierra todos
+      panels.forEach(p => p.classList.remove('active'));
+
+      // Abre solo si no estaba activo
+      if (!isActive) {
+        panel.classList.add('active');
+      }
+    });
+  });
+});
+
+
