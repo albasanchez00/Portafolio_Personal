@@ -46,13 +46,13 @@
       <!-- ENLACES REDES BARRA LATERAL IZQ -->
       <div class="social-sidebar social-bar-mobile" aria-label="Redes sociales">
         <a href="https://github.com/albasanchez00" target="_blank" aria-label="GitHub">
-          <img src="./vista/media/icons/github.png" alt="GitHub">
+          <img src="./vista/media/icons/github.png" alt="link GitHub">
         </a>
         <a href="https://www.linkedin.com/in/alba-s%C3%A1nchez-olmedo-8a3a412a9/" target="_blank" aria-label="LinkedIn">
-          <img src="./vista/media/icons/linkedin-svgrepo-com.svg" alt="LinkedIn">
+          <img src="./vista/media/icons/linkedin-svgrepo-com.svg" alt="link LinkedIn">
         </a>
         <a href="#" id="correoDirecto" aria-label="Enviar correo">
-          <img src="./vista/media/icons/email-icon.svg" alt="Correo electrónico">
+          <img src="./vista/media/icons/email-icon.svg" alt="link Correo electrónico">
         </a>
       </div>
       <!-- HERO -->
@@ -61,11 +61,7 @@
         <div class="hero__content">
           <!-- Columna: Imagen -->
           <div class="about__media">
-            <img
-              src="./vista/media/imagen-portrafolio.jpg"
-              alt="Foto de Alba Sánchez Olmedo"
-              class="about__img"
-            >
+            <img src="./vista/media/imagen-portrafolio.jpg" alt="foto presentación" class="about__img">
           </div>
           <div class="container hero__content">
             <h1 class="hero__title">¡Hola! Soy Alba Sánchez</h1>
@@ -138,30 +134,45 @@
         <div class="container">
           <!-- Formación Académica -->
           <!-- Línea de tiempo para formación -->
-          <div class="timeline timeline--alt">
-            <div class="timeline__item left">
-              <div class="timeline__content">
-                <span class="timeline__date">02/2025 – En curso</span>
-                <h3>Programación de Sistemas Informáticos</h3>
-                <p>CEAT Formación</p>
+          <div class="career-block">
+            <h2 class="career-block__title">Formación Académica</h2>
+            <div class="timeline-horizontal">
+              
+              <div class="timeline-step reveal">
+                <div class="timeline-marker">
+                  <span class="timeline-date">02/2025 – En curso</span>
+                  <span class="timeline-dot"></span>
+                </div>
+                <div class="timeline-content">
+                  <h3>Programación de Sistemas Informáticos</h3>
+                  <p class="timeline-sub">CEAT Formación</p>
+                </div>
               </div>
-            </div>
-            <div class="timeline__item right">
-              <div class="timeline__content">
-                <span class="timeline__date">03/2024 – 01/2025</span>
-                <h3>Desarrollo de Aplicaciones con Tecnología Web</h3>
-                <p>CEAT Formación</p>
+
+              <div class="timeline-step reveal">
+                <div class="timeline-marker">
+                  <span class="timeline-date">03/2024 – 01/2025</span>
+                  <span class="timeline-dot"></span>
+                </div>
+                <div class="timeline-content">
+                  <h3>Desarrollo de Aplicaciones Web</h3>
+                  <p class="timeline-sub">CEAT Formación</p>
+                </div>
               </div>
-            </div>
-            <div class="timeline__item left">
-              <div class="timeline__content">
-                <span class="timeline__date">09/2022 – 06/2023</span>
-                <h3>Técnico en Sistemas Microinformáticos y Redes</h3>
-                <p>IES Juan Bosco</p>
+
+              <div class="timeline-step reveal">
+                <div class="timeline-marker">
+                  <span class="timeline-date">09/2022 – 06/2023</span>
+                  <span class="timeline-dot"></span>
+                </div>
+                <div class="timeline-content">
+                  <h3>Sistemas Microinformático y Redes</h3>
+                  <p class="timeline-sub">IES Juan Bosco</p>
+                </div>
               </div>
+
             </div>
           </div>
-
 
           <div class="career-block">
             <h2 class="career-block__title">Experiencia Profesional</h2>
@@ -171,6 +182,9 @@
                   <div>
                     <h3>Community Manager</h3>
                     <p class="exp-sub">ELITE CB / OMHOKIDS — 03/2024 – 01/2025</p>
+                    <img src="./vista/media/icons/redes-sociales-icon.png" alt="redes sociales" class="tech-icon" />
+                    <img src="./vista/media/icons/wordpress.png" alt="wordpress" class="tech-icon" />
+                    <img src="./vista/media/icons/amazon-icon.png" alt="amazon" class="tech-icon" />
                   </div>
                   <span class="exp-toggle">+</span>
                 </button>
@@ -184,6 +198,8 @@
                   <div>
                     <h3>Relaciones Públicas</h3>
                     <p class="exp-sub">Be The Event — 05/2023 – 06/2023</p>
+                    <img src="./vista/media/icons/apreton-de-manos.png" alt="atencion al cliente" class="tech-icon" />
+                    <img src="./vista/media/icons/redes-sociales-icon.png" alt="redes sociales" class="tech-icon" />
                   </div>
                   <span class="exp-toggle">+</span>
                 </button>
@@ -197,6 +213,8 @@
                   <div>
                     <h3>Técnico de Soporte y Atención al Cliente</h3>
                     <p class="exp-sub">ALVIC (Enter4) — 03/2023 – 05/2023</p>
+                    <img src="./vista/media/icons/reparacion-de-maquinas.png" alt="mantenimiento de equipos" class="tech-icon" />
+                    <img src="./vista/media/icons/servicio-al-cliente-icom.png" alt="atencion al cliente" class="tech-icon" />
                   </div>
                   <span class="exp-toggle">+</span>
                 </button>
@@ -204,22 +222,8 @@
                   <p>Instalación y reparación de equipos informáticos, configuración de sistemas operativos, atención remota mediante interfono técnico.</p>
                 </div>
               </div>
-
-              <div class="exp-panel">
-                <button class="exp-header">
-                  <div>
-                    <h3>Camarera y Barra</h3>
-                    <p class="exp-sub">Restaurante Terraza El Porrón — 06/2022 – 02/2024</p>
-                  </div>
-                  <span class="exp-toggle">+</span>
-                </button>
-                <div class="exp-body">
-                  <p>Atención al cliente, manejo de terminales TPV, toma de comandas, gestión de cobros y coordinación con cocina. Uso del software Ágora.</p>
-                </div>
-              </div>
             </div>
           </div>
-
         </div>
       </section>
 
@@ -230,7 +234,7 @@
           <h2 id="projects-title" class="section-title">Proyectos</h2>
           <div class="projects__grid">
             <article class="project-card">
-              <img src="./vista/media/pagina-vitalink.png" alt="Proyecto 1" class="project-card__img">
+              <img src="./vista/media/pagina-vitalink.png" alt="Proyecto Vitalink" class="project-card__img">
               <div class="project-card__info">
                 <h3 class="project-card__title">Vitalink</h3>
                 <p>Proyecto creado para asistir a pacientes desde casa.</p>
@@ -246,7 +250,7 @@
             </article>
 
             <article class="project-card">
-              <img src="./vista/media/pagina-cobalto.png" alt="Proyecto 1" class="project-card__img">
+              <img src="./vista/media/pagina-cobalto.png" alt="Proyecto Cobalto" class="project-card__img">
               <div class="project-card__info">
                 <h3 class="project-card__title">Cobalto AI</h3>
                 <p>Pagína web de generación de imágenes con IA, haciendo uso de la tecnologia flux y la API de LeonardoAI.</p>
@@ -262,7 +266,7 @@
             </article>
 
             <article class="project-card">
-              <img src="./vista/media/pagina-pryme-abogados.png" alt="Proyecto 1" class="project-card__img">
+              <img src="./vista/media/pagina-pryme-abogados.png" alt="Proyecto Pyme Abogados" class="project-card__img">
               <div class="project-card__info">
                 <h3 class="project-card__title">Pyme Abogados</h3>
                 <p>Proyecto del curso sobre una página web de abogacía alojada en Wordpress.</p>
@@ -277,7 +281,7 @@
             </article>
 
             <article class="project-card">
-              <img src="./vista/media/pagina-deColores.png" alt="Proyecto 1" class="project-card__img">
+              <img src="./vista/media/pagina-deColores.png" alt="Proyecto DeColores" class="project-card__img">
               <div class="project-card__info">
                 <h3 class="project-card__title">DeColores</h3>
                 <p>Proyecto del curso sobre una página web de abogacía alojada en Wordpress.</p>
@@ -292,7 +296,7 @@
             </article>
 
             <article class="project-card">
-              <img src="./vista/media/pagina-adidas.png" alt="Proyecto 1" class="project-card__img">
+              <img src="./vista/media/pagina-adidas.png" alt="Proyecto Adidas" class="project-card__img">
               <div class="project-card__info">
                 <h3 class="project-card__title">Adidas Web</h3>
                 <p>Proyecto del curso en el que recreamos la tienda online de Adidas.</p>
@@ -307,7 +311,7 @@
             </article>
 
             <article class="project-card">
-              <img src="./vista/media/pagina-banca.png" alt="Proyecto 1" class="project-card__img">
+              <img src="./vista/media/pagina-banca.png" alt="Proyecto Banca Online" class="project-card__img">
               <div class="project-card__info">
                 <h3 class="project-card__title">Banca Online</h3>
                 <p>Proyecto del curso en el que hacemos uso de una base de datos para regstrar el alta de usuarios en una página web de una Banca Online.</p>
@@ -322,7 +326,7 @@
             </article>
 
             <article class="project-card">
-              <img src="./vista/media/pagina-cepa.png" alt="Proyecto 1" class="project-card__img">
+              <img src="./vista/media/pagina-cepa.png" alt="Proyecto CEPA" class="project-card__img">
               <div class="project-card__info">
                 <h3 class="project-card__title">CEPA</h3>
                 <p>Proyecto del curso que consiste en una página web para la gestión, consultar y alta de alumnos en un centro.</p>
@@ -337,7 +341,7 @@
             </article>
 
             <article class="project-card">
-              <img src="./vista/media/pagina-uship.png" alt="Proyecto 1" class="project-card__img">
+              <img src="./vista/media/pagina-uship.png" alt="Proyecto Uship" class="project-card__img">
               <div class="project-card__info">
                 <h3 class="project-card__title">Uship</h3>
                 <p>Proyecto del curso el cual consiste en una página web la cual permite localizar paquetes atraves de un identificador.</p>
@@ -399,8 +403,8 @@
     <footer class="footer" role="contentinfo">
       <div class="container footer__inner">
         <div class="footer__social">
-          <a href="https://github.com/albasanchez00" aria-label="GitHub"><img src="./vista/media/icons/github.png" alt=""></a>
-          <a href="https://www.linkedin.com/in/alba-s%C3%A1nchez-olmedo-8a3a412a9/" aria-label="LinkedIn"><img src="./vista/media/icons/linkedin-svgrepo-com.svg" alt=""></a>
+          <a href="https://github.com/albasanchez00" aria-label="GitHub"><img src="./vista/media/icons/github.png" alt="link GitHub"></a>
+          <a href="https://www.linkedin.com/in/alba-s%C3%A1nchez-olmedo-8a3a412a9/" aria-label="LinkedIn"><img src="./vista/media/icons/linkedin-svgrepo-com.svg" alt="link LinkedIn"></a>
         </div>
         <p class="footer__copy">© 2025 Alba Sánchez Olmedo</p>
       </div>
