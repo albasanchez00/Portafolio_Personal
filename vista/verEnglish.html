@@ -1,12 +1,11 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Portafolio - Developer Full Stack</title>
-  <meta name="description" content="Portafolio de Alba Sánchez Olmedo, desarrolladora web full-stack y técnico microintomático.">
-  <meta name="keywords" content="portafolio, desarrolladora web, técnico microintomático, inteligencia artificial, SEO, marketing digital">
+  <title>Portfolio - Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Alba Sánchez Olmedo, full-stack web developer and microcomputer technician.">
+  <meta name="keywords" content="portfolio, web developer, microcomputer technician, artificial intelligence, SEO, digital marketing">
   <meta name="author" content="Alba Sánchez Olmedo">
   <link rel="icon" href="./media/logo-portafolio.png" type="image/png">
   <link rel="apple-touch-icon" href="./media/logo-portafolio.png">
@@ -17,87 +16,82 @@
     <header role="banner">
       <div class="container header__inner">
         <picture class="header__logo">
-          <a href="index.html"><img src="./media/logo-portafolio.png" alt=""></a>
+          <a href="index.html"><img src="./vista/media/logo-portafolio.png" alt=""></a>
         </picture>
-        <button id="nav-toggle" class="header__toggle" aria-label="Abrir menú" aria-expanded="false">
+        <button id="nav-toggle" class="header__toggle" aria-label="Open menu" aria-expanded="false">
           ☰
         </button>
         <nav id="nav" class="header__nav" role="navigation">
           <ul class="header__list">
-            <li><a href="#about">About me</a></li>
-            <li><a href="#career">Experience</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#career">Education and Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <div class="lang-switcher" aria-label="Language selector">
-          <a href="../index.html" aria-label="Versión en Español">
-            <img src="./media/icons/icon-circular-españa.svg" alt="Español" width="24" height="16" />
+          <a href="./index.html" aria-label="Spanish version">
+            <img src="./media/icons/icon-circular-españa.svg" alt="Spanish" width="24" height="16" />
           </a>
-          <a href="./verEnglish.html" aria-label="English version">
-            <img src="./media/icons/icon-circular-gran-bretaña.svg" alt="English" width="24" height="16" />
+          <a href="./vista/verEnglish.html" aria-label="English version">
+            <img src=".media/icons/icon-circular-gran-bretaña.svg" alt="English" width="24" height="16" />
           </a>
         </div>
       </div>
     </header>
 
-
     <main>
-      <!-- ENLACES REDES BARRA LATERAL IZQ -->
-      <div class="social-sidebar social-bar-mobile" aria-label="Redes sociales">
+      <!-- LEFT SOCIAL BAR -->
+      <div class="social-sidebar social-bar-mobile" aria-label="Social media">
         <a href="https://github.com/albasanchez00" target="_blank" aria-label="GitHub">
-          <img src="./media/icons/github.png" alt="GitHub">
+          <img src="./media/icons/github.png" alt="GitHub link">
         </a>
         <a href="https://www.linkedin.com/in/alba-s%C3%A1nchez-olmedo-8a3a412a9/" target="_blank" aria-label="LinkedIn">
-          <img src="./media/icons/linkedin-svgrepo-com.svg" alt="LinkedIn">
+          <img src="./media/icons/linkedin-svgrepo-com.svg" alt="LinkedIn link">
         </a>
-        <a href="#" id="correoDirecto" aria-label="Enviar correo">
-          <img src="./media/icons/email-icon.svg" alt="Correo electrónico">
+        <a href="#" id="correoDirecto" aria-label="Send email">
+          <img src="./media/icons/email-icon.svg" alt="Email link">
         </a>
       </div>
       <!-- HERO -->
-      <section class="hero hero--particles" role="img" aria-label="Fondo hero con texto de bienvenida">
+      <section class="hero hero--particles" role="img" aria-label="Hero background with welcome text">
         <div id="tsparticles-hero"></div>
         <div class="hero__content">
-          <!-- Columna: Imagen -->
+          <!-- Column: Image -->
           <div class="about__media">
-            <img
-              src="./media/imagen-portrafolio.jpg"
-              alt="Foto de Alba Sánchez Olmedo"
-              class="about__img">
+            <img src="./media/imagen-portrafolio.jpg" alt="introductory photo" class="about__img">
           </div>
           <div class="container hero__content">
-            <h1 class="hero__title">¡Hi! I'm Alba Sánchez</h1>
-            <p class="hero__subtitle">Developer Web Full-Stack</p>
+            <h1 class="hero__title">Hello! I'm Alba Sánchez</h1>
+            <p class="hero__subtitle">Full-Stack Web Developer</p>
             <p class="hero__subtitle">Microcomputer Technician</p>
           </div>
 
-          <!-- Indicador de scroll -->
+          <!-- Scroll indicator -->
           <div class="hero__scroll-indicator" aria-hidden="true">
             <span class="scroll-indicator__icon">
               <img src="./media/icons/mouse-icon.svg" alt="" />
             </span>
           </div>
-        </div>
+        </div>    
       </section>
 
-
-          <!-- SOBRE MI -->
+      <!-- ABOUT ME -->
       <section id="about" class="about" aria-labelledby="about-title">
         <div class="container container-about">
-          <!-- Título y subtítulo -->
-          <h2 id="about-title" class="section-title">Nice to meet you</h2>
+          <!-- Title and subtitle -->
+          <h2 id="about-title" class="section-title">Nice to Meet You</h2>
           <div class="about__content">
-            <!-- Columna: Texto + Skills -->
+            <!-- Column: Text + Skills -->
             <div class="about__details">
-              <!-- Texto de presentación -->
+              <!-- Introductory text -->
               <div class="about__text">
                 <p>I am a full-stack developer and microcomputer technician with a passion for creating interactive and accessible experiences.</p>
                 <ul>
                   <li>I have experience as a community manager and maintaining a website hosted on WordPress using Elementor.</li>
-                  <li>Contributing my knowledge in SEO and digital marketing, which allows me to create content optimized for search engines.</li>
-                  <li>I have knowledge in programming/markup languages such as JAVA, PHP, and JavaScript, as well as in HTML and CSS.</li>
-                  <li>Currently, I am expanding my knowledge in Artificial Intelligence through a specialized course (Racks Academy), driven by my interest in this field.</li>
+                  <li>I contribute my knowledge in SEO and digital marketing, which allows me to create content optimized for search engines.</li>
+                  <li>I have knowledge in programming languages/frameworks such as Java, PHP, and JavaScript, as well as HTML and CSS.</li>
+                  <li>Currently, I am expanding my knowledge in Artificial Intelligence through a specialized course (Racks Academy), driven by my interest in this area.</li>
                   <li>I love learning new technologies and constantly improving my skills.</li>
                 </ul>
                 <p>
@@ -105,7 +99,7 @@
                   <a href="#contact" class="about__link">contact me</a>.
                 </p>
               </div>
-              <!-- Habilidades/Conocimientos -->
+              <!-- Skills/Knowledge -->
               <div class="about__skills">
                 <h3 class="skills__title">Skills:</h3>
                 <div class="skills__list">
@@ -121,10 +115,10 @@
                   <span class="skill">Elementor</span>
                   <span class="skill">SEO</span>
                   <span class="skill">Digital Marketing</span>
-                  <span class="skill">Operating System Installation</span>
+                  <span class="skill">OS Installation</span>
                   <span class="skill">Windows</span>
                   <span class="skill">Linux</span>
-                  <span class="skill">Hardware Assembly and Maintenance</span>
+                  <span class="skill">Assembly and Maintenance of Equipment</span>
                 </div>
               </div>
             </div>
@@ -132,196 +126,278 @@
         </div>
       </section>
 
-      <!-- FORMACIÓN Y EXPERIENCIA -->
+      <!-- EDUCATION AND EXPERIENCE -->
       <section id="career" class="career" aria-labelledby="career-title">
         <div class="container">
-          <!-- Formación Académica -->
-          <div class="career-block">
-            <h2 class="career-block__title">Academic Background</h2>
-            <div class="card-list">
-              <div class="card">
-                <h3>Programming of Computer Systems</h3>
-                <p class="card-sub">CEAT Training · Currently</p>
-                <p class="card-date">02/2025 – Ongoing</p>
-              </div>
-              <div class="card">
-                <h3>Development of Applications with Web Technology</h3>
-                <p class="card-sub">CEAT Training</p>
-                <p class="card-date">03/2024 – 01/2025</p>
-              </div>
-              <div class="card">
-                <h3>Technician in Microcomputer Systems and Networks</h3>
-                <p class="card-sub">IES Juan Bosco</p>
-                <p class="card-date">09/2022 – 06/2023</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Experiencia Profesional -->
           <div class="career-block">
             <h2 class="career-block__title">Professional Experience</h2>
-            <div class="card-list">
-              <div class="card">
-                <h3>Community Manager <span>(Dual Internship)</span></h3>
-                <p class="card-sub">ELITE CB / OMHOKIDS</p>
-                <p class="card-date">03/2024 – 01/2025</p>
-                <p>Management of social networks, content, and online store with WordPress, Elementor, Pinterest, Meta, and Amazon.</p>
+            <div class="exp-accordion">
+              <div class="exp-panel">
+                <button class="exp-header">
+                  <div>
+                    <h3>Community Manager</h3>
+                    <p class="exp-sub">ELITE CB / OMHOKIDS — 03/2024 – 01/2025</p>
+                    <img src="./media/icons/social-media.png" alt="social media" class="tech-icon" />
+                    <img src="./media/icons/wordpress-icon.png" alt="WordPress" class="tech-icon" />
+                    <img src="./media/icons/amazon.png" alt="Amazon" class="tech-icon" />
+                  </div>
+                  <span class="exp-toggle">+</span>
+                </button>
+                <div class="exp-body">
+                  <p>
+                    <strong>Context:</strong> I boosted the store's digital presence to increase brand recognition, e-commerce traffic, and sales on WordPress and Amazon.
+                  </p>
+                  <ul>
+                    <li>
+                      <strong>Social media:</strong>
+                      I managed Instagram, Pinterest, and Facebook (Meta Business Suite), scheduling weekly posts, moderating the community, and adjusting the strategy based on engagement metrics.
+                    </li>
+                    <li>
+                      <strong>Visual and textual content:</strong>
+                      I designed graphics in Canva/Photoshop and wrote SEO-optimized copy (hashtags/keywords) for social media, as well as monthly newsletters.
+                    </li>
+                    <li>
+                      <strong>Online store (WordPress + Elementor):</strong>
+                      I updated the catalog (optimized images, SEO descriptions), edited landing pages with semantic structure, and improved accessibility (alt text, aria-labels, WCAG contrast).
+                    </li>
+                    <li>
+                      <strong>Amazon Seller Central:</strong>
+                      I synchronized inventories, uploaded SKUs, and optimized listings with keywords; monitored reviews and reduced returns due to size inquiries.
+                    </li>
+                  </ul>
+                  <p>
+                    <strong>Results:</strong>
+                    E-commerce sales +7% year-over-year; organic traffic +18%; SEO: impressions +2%, Google clicks +5% (CTR 0.27); web performance: TTFB –25%, FCP +20%, load time reduced by 34%.
+                  </p>
+                </div>
               </div>
-              <div class="card">
-                <h3>Public Relations <span>(Internship)</span></h3>
-                <p class="card-sub">Be The Event</p>
-                <p class="card-date">05/2023 – 06/2023</p>
-                <p>Organization of tourist events and content creation for social networks.</p>
+
+              <div class="exp-panel">
+                <button class="exp-header">
+                  <div>
+                    <h3>Public Relations</h3>
+                    <p class="exp-sub">Be The Event > Erasmus+ (Malta) — 05/2023 – 06/2023</p>
+                    <img src="./media/icons/apreton-de-manos.png" alt="customer service" class="tech-icon" />
+                    <img src="./media/icons/social-media.png" alt="social media" class="tech-icon" />
+                  </div>
+                  <span class="exp-toggle">+</span>
+                </button>
+                <!-- EXP–BODY for “Public Relations (Erasmus+ Malta)” -->
+                <div class="exp-body">
+                  <p>
+                    <strong>Context:</strong> I participated in an Erasmus+ project internship in Malta, collaborating in organizing tourist events and supporting participant management to increase visibility for the Erasmus+ program.
+                  </p>
+                  <ul>
+                    <li>
+                      <strong>Tour event planning:</strong>
+                      I assisted in logistical planning (reservations, vendor coordination, and scheduling activities) for tours and training days.
+                    </li>
+                    <li>
+                      <strong>Participant management:</strong>
+                      I registered and assisted attendees, provided practical information (accommodation, transportation), and resolved issues during the activities.
+                    </li>
+                    <li>
+                      <strong>Social media engagement:</strong>
+                      I created and published content on Facebook and Instagram (photos, stories, reels), generating engagement and enhancing visibility for the Erasmus+ event through hashtag and mention strategies.
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="card">
-                <h3>Support Technician and Customer Service <span>(Internship)</span></h3>
-                <p class="card-sub">ALVIC (Enter4)</p>
-                <p class="card-date">03/2023 – 05/2023</p>
-                <p>Installation and repair of hardware. Remote assistance via intercom.</p>
-              </div>
-              <div class="card">
-                <h3>Waitress and Bar Staff</h3>
-                <p class="card-sub">Restaurante Terraza El Porrón</p>
-                <p class="card-date">06/2022 – 02/2024</p>
-                <p>Customer service, handling of POS systems, and Ágora software.</p>
+
+              <div class="exp-panel">
+                <button class="exp-header">
+                  <div>
+                    <h3>Support Technician and Customer Service</h3>
+                    <p class="exp-sub">ALVIC (Enter4) — 03/2023 – 05/2023</p>
+                    <img src="./media/icons/reparacion-de-maquinas.png" alt="equipment maintenance" class="tech-icon" />
+                    <img src="./media/icons/servicio-al-cliente-icom.png" alt="customer service" class="tech-icon" />
+                  </div>
+                  <span class="exp-toggle">+</span>
+                </button>
+                <!-- EXP–BODY for “Support Technician and Customer Service” -->
+                <div class="exp-body">
+                  <!-- Brief Context -->
+                  <p>
+                    <strong>Context:</strong> I completed a mid-level internship for 2 months, providing technical support and customer service in the maintenance and commissioning of computer equipment.
+                  </p>
+
+                  <!-- Main Responsibilities -->
+                  <ul>
+                    <li>
+                      <strong>Self-service machine maintenance:</strong>
+                      I installed and repaired self-checkout terminals and self-service equipment at gas stations, ensuring proper function and communicating issues to the parts supplier.
+                    </li>
+                    <li>
+                      <strong>Remote support:</strong>
+                      I managed user issues via technical intercom and remote access software, diagnosing and resolving software and connectivity errors.
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-
-      <!-- PROYECTOS -->
+      <!-- PROJECTS -->
       <section id="projects" class="projects" aria-labelledby="projects-title">
         <div class="container">
-          <h2 id="projects-title" class="section-title">Proyectos</h2>
+          <h2 id="projects-title" class="section-title">Projects</h2>
           <div class="projects__grid">
             <article class="project-card">
-              <img src="./media/pagina-vitalink.png" alt="Proyecto 1" class="project-card__img">
+              <img src="./media/pagina-vitalink.png" alt="Vitalink Project" class="project-card__img">
               <div class="project-card__info">
                 <h3 class="project-card__title">Vitalink</h3>
-                <p>Project created to assist patients from home</p>
+                <p>Project created to assist patients from home.</p>
                 <div class="skills__list">
-                  <span class="skill">IA</span>
-                  <span class="skill">Spring boot</span>
+                  <span class="skill">AI</span>
+                  <span class="skill">Spring Boot</span>
                   <span class="skill">HTML</span>
-                  <span class="skill">css</span>
+                  <span class="skill">CSS</span>
                   <span class="skill">JavaScript</span>
                 </div>
-                  <a href="https://proyectosportafolio-production.up.railway.app/proyectoVitalink/index.html" class="project-card__btn" target="_blank">Ver más</a>
+                <a href="https://proyectosportafolio-production.up.railway.app/proyectoVitalink/index.html" class="project-card__btn" target="_blank">See more</a>
               </div>
             </article>
 
             <article class="project-card">
-              <img src="./media/pagina-cobalto.png" alt="Proyecto 1" class="project-card__img">
+              <img src="./media/pagina-cobalto.png" alt="Cobalto AI Project" class="project-card__img">
               <div class="project-card__info">
                 <h3 class="project-card__title">Cobalto AI</h3>
-                <p>Website for generating images with AI, using flux technology and the LeonardoAI API</p>
+                <p>Website for generating images with AI, using Flux technology and the LeonardoAI API.</p>
                 <div class="skills__list">
-                  <span class="skill">IA</span>
-                  <span class="skill">Wordpress</span>
+                  <span class="skill">AI</span>
+                  <span class="skill">WordPress</span>
                   <span class="skill">IMPREZA</span>
                   <span class="skill">PHP</span>
-                  <span class="skill">MySql</span>
+                  <span class="skill">MySQL</span>
                 </div>
                 <a href="#" class="project-card__btn">Coming soon...</a>
               </div>
             </article>
 
             <article class="project-card">
-              <img src="./media/pagina-pryme-abogados.png" alt="Proyecto 1" class="project-card__img">
+              <img src="./media/pagina-pryme-abogados.png" alt="Pyme Abogados Project" class="project-card__img">
               <div class="project-card__info">
                 <h3 class="project-card__title">Pyme Abogados</h3>
-                <p>Course project about a law firm website hosted on WordPress</p>
+                <p>Project for a law firm's website hosted on WordPress.</p>
                 <div class="skills__list">
-                  <span class="skill">Wordpress</span>
+                  <span class="skill">WordPress</span>
                   <span class="skill">Elementor</span>
                   <span class="skill">PHP</span>
-                  <span class="skill">MySql</span>
+                  <span class="skill">MySQL</span>
                 </div>
                 <a href="#" class="project-card__btn">Coming soon...</a>
               </div>
             </article>
-            
+
             <article class="project-card">
-              <img src="./media/pagina-deColores.png" alt="Proyecto 1" class="project-card__img">
+              <img src="./media/pagina-deColores.png" alt="DeColores Project" class="project-card__img">
               <div class="project-card__info">
                 <h3 class="project-card__title">DeColores</h3>
-                <p>Course project about a law firm website hosted on WordPress</p>
+                <p>Project for a law firm's website hosted on WordPress.</p>
                 <div class="skills__list">
-                  <span class="skill">Wordpress</span>
+                  <span class="skill">WordPress</span>
                   <span class="skill">Elementor</span>
                   <span class="skill">PHP</span>
-                  <span class="skill">MySql</span>
+                  <span class="skill">MySQL</span>
                 </div>
                 <a href="#" class="project-card__btn">Coming soon...</a>
               </div>
             </article>
 
             <article class="project-card">
-              <img src="./media/pagina-adidas.png" alt="Proyecto 1" class="project-card__img">
+              <img src="./media/pagina-banca.png" alt="Online Banking Project" class="project-card__img">
               <div class="project-card__info">
-                <h3 class="project-card__title">Adidas Web</h3>
-                <p>Proyecto del curso en el que recreamos la tienda online de Adidas.</p>
+                <h3 class="project-card__title">Online Banking</h3>
+                <p>Project in which we use a database to manage user registration on an online banking website.</p>
                 <div class="skills__list">
                   <span class="skill">PHP</span>
                   <span class="skill">HTML</span>
                   <span class="skill">CSS</span>
-                  <span class="skill">MySql</span>
+                  <span class="skill">MySQL</span>
                 </div>
-                <a href="https://proyectosportafolio-production.up.railway.app/proyectoAdidas/index.php" class="project-card__btn">Ver más</a>
+                <a href="https://proyectosportafolio-production.up.railway.app/proyectoBanca/index.php" class="project-card__btn">See more</a>
               </div>
             </article>
 
             <article class="project-card">
-              <img src="./media/pagina-banca.png" alt="Proyecto 1" class="project-card__img">
-              <div class="project-card__info">
-                <h3 class="project-card__title">Banca Online</h3>
-                <p>Course project where we use a database to register user sign-ups on an Online Banking website.</p>
-                <div class="skills__list">
-                  <span class="skill">PHP</span>
-                  <span class="skill">HTML</span>
-                  <span class="skill">CSS</span>
-                  <span class="skill">MySql</span>
-                </div>
-                <a href="https://proyectosportafolio-production.up.railway.app/proyectoBanca/index.php" class="project-card__btn">Ver más</a>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <img src="./media/pagina-cepa.png" alt="Proyecto 1" class="project-card__img">
+              <img src="./media/pagina-cepa.png" alt="CEPA Project" class="project-card__img">
               <div class="project-card__info">
                 <h3 class="project-card__title">CEPA</h3>
-                <p>Course project consisting of a website for managing, consulting, and registering students in a school.</p>
+                <p>Project consisting of a website for managing, consulting, and enrolling students at an educational center.</p>
                 <div class="skills__list">
                   <span class="skill">PHP</span>
                   <span class="skill">HTML</span>
                   <span class="skill">CSS</span>
-                  <span class="skill">MySql</span>
+                  <span class="skill">MySQL</span>
                 </div>
-                <a href="https://proyectosportafolio-production.up.railway.app/proyectoCepa/index.php" class="project-card__btn">Ver más</a>
+                <a href="https://proyectosportafolio-production.up.railway.app/proyectoCepa/index.php" class="project-card__btn">See more</a>
               </div>
             </article>
 
             <article class="project-card">
-              <img src="./media/pagina-uship.png" alt="Proyecto 1" class="project-card__img">
+              <img src="./media/pagina-uship.png" alt="Uship Project" class="project-card__img">
               <div class="project-card__info">
                 <h3 class="project-card__title">Uship</h3>
-                <p>Course project consisting of a website that allows tracking packages through an identifier.</p>
+                <p>Project consisting of a website that allows tracking packages through an identifier.</p>
                 <div class="skills__list">
                   <span class="skill">PHP</span>
                   <span class="skill">HTML</span>
                   <span class="skill">CSS</span>
-                  <span class="skill">MySql</span>
+                  <span class="skill">MySQL</span>
                 </div>
-                <a href="https://proyectosportafolio-production.up.railway.app/uship/index.html" class="project-card__btn">Ver más</a>
+                <a href="https://proyectosportafolio-production.up.railway.app/uship/index.html" class="project-card__btn">See more</a>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- CONTACTO -->
+      <!-- ACADEMIC EDUCATION -->
+      <section id="career" class="career" aria-labelledby="career-title">
+        <div class="container">
+          <!-- Academic Education -->
+          <!-- Timeline for education -->
+          <div class="career-block">
+            <h2 class="career-block__title">Academic Education</h2>
+            <div class="timeline-horizontal">
+              <div class="timeline-step reveal">
+                <div class="timeline-marker">
+                  <span class="timeline-date">09/2022 – 06/2023</span>
+                  <span class="timeline-dot"></span>
+                </div>
+                <div class="timeline-content">
+                  <h3>Microcomputer Systems and Networks</h3>
+                  <p class="timeline-sub">IES Juan Bosco</p>
+                </div>
+              </div>
+              <div class="timeline-step reveal">
+                <div class="timeline-marker">
+                  <span class="timeline-date">03/2024 – 01/2025</span>
+                  <span class="timeline-dot"></span>
+                </div>
+                <div class="timeline-content">
+                  <h3>Web Application Development</h3>
+                  <p class="timeline-sub">CEAT Formación</p>
+                </div>
+              </div> 
+              <div class="timeline-step reveal">
+                <div class="timeline-marker">
+                  <span class="timeline-date">02/2025 – En curso</span>
+                  <span class="timeline-dot"></span>
+                </div>
+                <div class="timeline-content">
+                  <h3>Computer Systems Programming</h3>
+                  <p class="timeline-sub">CEAT Formación</p>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
       <section id="contact" class="contact" aria-labelledby="contact-title">
         <div class="container container-form">
           <h2 id="contact-title" class="section-title">Contact</h2>
@@ -336,44 +412,27 @@
             </div>
             <div class="contact__field">
               <label for="message">Message:</label>
-              <textarea id="message" name="message" rows="4" placeholder="Hola...." required></textarea>
+              <textarea id="message" name="message" rows="4" placeholder="Hello...." required></textarea>
             </div>
             <div class="contact__field contact__checkbox">
-              <label>
-                <input type="checkbox" id="terms" required>
-                I accept the <a href="#politica" target="_blank">privacy policy</a> and terms of use.
-              </label>
+              <input type="checkbox" id="privacy" name="privacy" required>
+              <label for="privacy">I accept the <a href="#" target="_blank">privacy policy</a>.</label>
             </div>
-
-            <div id="toast" class="toast" role="alert" aria-live="polite"></div>
-
-            <!-- Campos ocultos opcionales -->
-            <input type="hidden" name="_subject" value="Nuevo mensaje desde el portafolio">
-            <input type="hidden" name="_template" value="box">
-            <input type="hidden" name="_captcha" value="false">
-
-            <button type="submit" class="contact__btn btn--primary">Enviar</button>
+            <button type="submit" class="contact__btn">Send</button>
           </form>
-
         </div>
       </section>
 
-      
-      <!-- Botón "volver arriba" -->
-      <button id="scrollToTopBtn" aria-label="Volver al inicio" title="Volver arriba">↑</button>
+      <!-- "Back to top" Button -->
+      <button id="scrollToTopBtn" aria-label="Back to top" title="Back to top">↑</button>
     </main>
 
     <footer class="footer" role="contentinfo">
       <div class="container footer__inner">
-        <div class="footer__social">
-          <a href="https://github.com/albasanchez00" aria-label="GitHub"><img src="./media/icons/github.png" alt="Enlace a Github"></a>
-          <a href="https://www.linkedin.com/in/alba-s%C3%A1nchez-olmedo-8a3a412a9/" aria-label="LinkedIn"><img src="./media/icons/linkedin-svgrepo-com.svg" alt="Enlace a LinkedIn"></a>
-        </div>
         <p class="footer__copy">© 2025 Alba Sánchez Olmedo</p>
       </div>
     </footer>
   </section>  
-  
   
   <script src="../js/script.js"></script>
   <script src="../js/scroll.js"></script>
