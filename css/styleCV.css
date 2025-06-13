@@ -8,7 +8,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
     padding: 20px;
 }
@@ -24,7 +23,7 @@ body {
 }
 
 .header {
-    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    background: linear-gradient(135deg, #2c3e50 0%, #007acc 100%);
     color: white;
     padding: 40px;
     text-align: center;
@@ -85,9 +84,11 @@ body {
     justify-content: center;
     gap: 30px;
     margin-top: 20px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     position: relative;
     z-index: 1;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-item {
@@ -137,7 +138,6 @@ body {
     left: 0;
     width: 0;
     height: 3px;
-    background: #e74c3c;
     transition: width 0.3s ease;
 }
 
@@ -227,7 +227,7 @@ body {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    background: linear-gradient(135deg, #035e9b, #007acc);
     color: white;
     border: none;
     padding: 15px 25px;
@@ -235,14 +235,14 @@ body {
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    box-shadow: 0 10px 30px rgba(231, 76, 60, 0.3);
+    box-shadow: 0 10px 30px rgba(3, 94, 155, 0.3);
     transition: all 0.3s ease;
     z-index: 1000;
 }
 
 .download-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(231, 76, 60, 0.4);
+    box-shadow: 0 15px 40px rgba(3, 94, 155, 0.4);
 }
 
 .download-btn:active {

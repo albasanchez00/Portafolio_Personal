@@ -44,7 +44,7 @@ function downloadCV() {
 
     // Configurar título para el PDF
     const originalTitle = document.title;
-    document.title = 'CV_Tu_Nombre';
+    document.title = 'CV_Alba_Sánchez';
 
     // Imprimir
     window.print();
